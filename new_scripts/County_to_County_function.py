@@ -2,7 +2,7 @@
 # It loops through the county inflow and county outflow files, formats their rows into a list,
 # creates summary tables for 'totals' records, and exports the lists to an SQLite database.
 
-# Users will be prompted to enter the full path (using \\) to the folder in which the data files are stored,
+# Users will be prompted to enter the full path to the folder in which the data files are stored,
 # confirm that the table headers are accurate for the year being processed, name the SQLite database,
 # and then input the full path to the County Inflow file, followed by the full path to the County Outflow file.
 # As a final step, the script runs through each data table and separates suppressed records
