@@ -1,0 +1,3204 @@
+
+           Supplemental Documentation
+           for External Data Products:
+
+
+  This documentation package provides supplemental
+  information for the following four external data
+  products:
+
+      1.  State and County Gross Migration Tally,
+
+      2.  State-to-State Migration Flows, and
+
+      3.  County-to-County Migration Flows
+        
+
+
+  There are 7 sections in this documentation package.
+  They are:
+
+      1.  Definitions and Explanations
+
+      2.  Data Product Content and Comparability
+
+      3.  Code List for States and U.S.
+
+      4.  Code List For Summary Level Categories Used in
+          the State-to-State Migration Flow Data
+
+      5.  Code List for Counties
+
+      6.  Code List For Summary Level Categories Used in
+          the County-to-County Migration Flow Data
+
+      7.  Citations for Research and Evaluation Papers
+
+      8.  Technical Documentation for Suppression
+          Procedures
+
+
+
+
+
+
+          Part A -- Definitions and Explanations
+
+
+The Census Bureau annually obtains from the Internal Revenue
+Service (IRS) an extract of individual income tax return
+information for use in its statistical programs.  The information
+is used to derive internal migration data for the administrative
+records method for the postcensal population estimates for states,
+counties and subcounty governmental units.  The data are also used
+in the Census Bureau's population projections program.  The IRS
+releases several of these data products such as the state-to-state
+and county-to-county migration flows, and aggregate income tally
+for counties.  This document provides a general description of the
+preparation of these products and a more detailed description of
+the definitions and universes in each data product.
+
+Individual data are protected by the confidentiality statues of
+Title 13 and Title 26; that is, no data can be released that would
+identify directly or indirectly any individual taxpayer.  All of
+the data released under this program are statistical summaries and
+have undergone suppression procedures to ensure no inappropriate
+disclosure of information.  The procedures are uniform across data
+products and within products to ensure consistency and that
+inadvertent disclosures from complementary data tables do not
+occur.
+
+
+BASIC DATA SOURCE
+
+The extracts include records for individual income tax forms 1040,
+1040A and 1040EZ (Beginning with the tax year 1987, the foreign
+category also includes forms 1040NR, 1040PR, 1040VI and 1040SS.)
+processed through Cycle 39 (the 39th week in the IRS's processing
+year) which is in late September.  Returns processed after that
+date are not included in the data.  The extracts usually contain
+about 95 to 98 percent of all returns filed during any particular
+tax year.  The returns cover the tax filing units -- the filer and
+spouse of filer, plus all exemptions represented on the forms.  The
+tax year 1997 file contained, for example, 105 million returns
+representing about 227 million persons, as defined by the
+exemptions reported on the forms.
+
+Thus, there are two limitations of these data sources -- file
+coverage and population coverage.  Because the file coverage is not
+complete, any control counts shown in these tables will not match
+analogous control counts in other IRS statistical data products.
+Second, there are segments of the population that are   not well
+represented by tax returns; most notably, the elderly and the poor.
+Thus, care should be exercised when using these data as proxies for
+the other population universes.
+
+
+DECEASED FILERS
+
+A deceased filer is identified by the abbreviation "DECD" in the
+primary filer name field and a deceased spouse of filer similarly
+identified.  A flag is set if "DECD" appears in the filer's name
+field and a separate flag is set if the spouse of the filer has
+"DECD" in the name field.  (The spouse of filer is also referred to
+as secondary filer.)  The Census Bureau defines as "estate"
+returns, those single returns with the filer deceased and those
+joint returns with both the filer and spouse of filer deceased.
+These "estate" returns are not included as returns in the data
+products.  Deceased filers and deceased spouses are not included as
+exemptions in the data products.
+
+
+REFERENCE PERIOD
+
+The tax returns are (mostly) filed during the spring following the
+end of the tax year.  The 1996 tax returns are, for example, filed
+in the spring of 1997 and represent residence as of filing.  Thus,
+when we refer to income or the files themselves, we refer to tax
+year.  When we refer to migration year, we refer to the year in
+which the return was filed.  Thus, the match of tax years 1995 and
+1996 produces 1996 to 1997 migration estimates.
+
+
+MATCHING RETURNS
+
+Tax returns are matched for two particular tax years (usually
+current year and prior year).  These are generically referred to as
+Year-1 (prior year) and Year-2 (current year).  There are three
+categories of match status:  (a) matched, (b) unmatched, Year-1
+only, and (c) unmatched, Year-2 only.  The match is made based on
+the SSN of the primary filer only.   That is, no match is attempted
+on the secondary filer.  Suppose, for example, a husband/wife
+couple file a joint return in Year-1 but both file separate returns
+in Year-2.  Then, the Year-1 joint return matches to the Year-2
+husband's separate return.  The spouse's Year-2 separate return
+becomes a nonmatch.  An analogous situation occurs with two
+separate returns in Year-1 and a joint return in Year-2.  This
+algorithm can be bothersome when changes in Federal and state tax
+law induce a change in filing status for husband/wife couples.
+
+
+GEOGRAPHIC CODING
+
+In order to tabulate data for specific geographic areas 
+(i.e., states and counties, each tax return has to be assigned a set of
+State and County codes that reflect the residence of the filer.  
+The geographic codes are now assigned under a new processing
+system that includes the ZIP+4-to-County Coding Guide
+(generally referred to as Z4CCG for county cross reference).
+
+The Census Bureau's Geography Division (GEO) and Population Division (POP) 
+have developed the Z4CCG to code IRS address records to a FIPS State and 
+County code consistent with the Census Bureau's geographic support system.  
+The new method combines U.S. Postal Service and Master Address File (MAF)/TIGER(TM) 
+data in a file to geocode the highest number of IRS address records possible.  
+The results comparing dual geocoding of Tax Year 2003 data showed that the new 
+method improved the coverage (i.e., number of records coded) significantly.   
+
+The Z4CCG began with a file prepared by the USPS which related each
+ZIP+4 to a state and county.  GEO cross-checked the file against the
+TIGER system and fixed erroneous relationships with the FIPS codes in 
+TIGER. POP made specific changes and additions to account for the Island
+Areas (Puerto Rico, Virgin Islands, Guam, American Samoa, etc.), and for 
+APO/FPO ZIP codes.
+
+From the ZIP+4 code and the mailing address of the tax returns, 
+we were then able to assign a state and county code from the Z4CCG
+by matching on the nine digit ZIP+4 on the returns.  For each processing 
+cycle, we code both the current year's file and the prior year's file using 
+the current years Z4CCG.
+
+The coding process assigns state/ county or state/ county
+equivalent codes for the states in the U.S., and for the District
+of Columbia.  We assign codes for APO/FPO ZIP codes and foreign entities.  
+For the county level migration flows, 4 classes are identified: 
+(a) APO/ FPO, (b) Puerto Rico, (c) Virgin Islands,
+and (d) other foreign.
+
+
+MOVER STATUS
+
+We classify all matched returns as movers or non-movers comparing
+address information on matched tax returns between the two tax
+years.  A matched tax return is defined as a non-mover if (a) the
+street address is the same between the two tax years, or (b) if the
+mailing state code and the 5-digit ZIP code and the post office
+name are identical in the two tax years.
+
+
+A NOTE ON ADDRESSES AND MOVER STATUS
+
+The address reported on the tax return is a mailing address and it
+may not actually represent the residence address of the tax filer.
+The following are the major reasons why the mailing address may not
+always be the same as the residence address of the tax filer.
+
+    1.   Tax Preparers or Accountants--some returns are sent
+         directly to tax preparers and accountants.
+
+    2.   Financial Institutions--some financial institutions will
+         loan a taxpayer money based on the amount of refund due
+         a taxpayer.  The refund is then sent directly to the
+         financial institution.  Similar arrangements can be found
+         at American Indian trading posts.
+
+    3.   Business Addresses--some taxpayers have their individual
+         income tax returns sent directly to their place of
+         business.
+
+    4.   College Students and Military -- some college students
+         living at college or military living in barracks have
+         their tax returns sent to the address of their parents'
+         or another address.
+
+    5.   Dual Residences -- some taxpayers maintain dual
+         residences and live in each during different seasons.
+         Thus, they may consider that they live in one state while
+         having their tax return mailed to the other.  For
+         example, a resident of New York may also live in Florida
+         during the winter and have their return mailed to
+         Florida.
+
+    6.   Other Addresses -- for other reasons, the mailing address
+         may not correspond with the residence address.  Some tax
+         filers may, for instance, use a post office box as their
+         mailing address.
+
+Even though the mailing address on the tax return does not always
+reflect where a person actually lives, we must assume the mailing
+address is the residence address.  Because of this assumption, some
+returns may be assigned an erroneous mover status.  For example, a
+change in mailing address without a change in residence address
+will cause an actual non-mover to be classified as a mover.
+Conversely, a change in residence address without a change in
+mailing address will lead a true mover to be classified as a non-
+mover.
+
+For more information on this issue, see the report by Douglas
+Sater, entitled "Differences in Location of Households and Tax
+Filing Units".
+
+
+MIGRATION STATUS
+
+Next, migration status is determined.  A non-mover is, by
+definition a non-migrant.  However, a mover is not necessarily a
+migrant.  That is, the tax payer may have moved, but stayed within
+the same state and county.  The year-1 state and county geographic
+codes are compared to the year-2 geographic codes.  If these two
+sets of codes are identical, then the mover is a "non-migrant;"
+whereas, if these codes differ, the mover is a "migrant".
+
+
+NUMBER OF RETURNS
+
+The number of returns includes records for individual income tax
+forms 1040, 1040A, 1040EZ and 1040NR (the foreign category also
+includes forms 1040PR, 1040VI and 1040SS) processed through Cycle
+39 (the 39th week in the IRS processing year) which is in late
+September.  Returns processed after that date are not included in
+the data.  The number of returns also exclude single returns with
+the filer deceased and joint returns with both the filer and spouse
+of filer deceased (and there are no other filer exemptions on the
+return); and returns that are not geographically coded.  Also, the
+"zero exemption" returns are excluded.
+
+
+ZERO EXEMPTION RETURNS
+
+It is possible for a person to file a return and still be claimed
+as an exemption on another person's return.  However, the tax filer
+is not allowed to claim a personal exemption if he (or she) is
+claimed as an exemption on another person's return.  Most of these
+cases were children who had enough income to be required to file a
+return, but who were also eligible to be claimed as an exemption on
+their parents' return.  Responses to questions on the various 1040
+forms identify these "zero exemption" cases.  These returns are not
+tabulated as a return or as an exemption in the migration or income
+data products.  However, the income included in these returns is
+included in the aggregate income tables.
+
+
+NUMBER OF EXEMPTIONS
+
+The number of total exemptions (usually referred to as the
+primary/secondary less deceased method) is defined as:(a) one for
+the primary filer if not deceased; plus (b) one for the secondary
+filer if present and not deceased; plus (c) the number of children
+exemptions at home, away and with EIC; plus (d) the number of
+parents' exemptions at home or away; plus (e) the number of other
+exemptions.  The number of exemptions is defined from the year-2
+returns for all matched returns and the year-2 only returns.  The
+number of exemptions for the year-1 only returns are by necessity,
+derived from the year-1 return.
+
+
+AGE CLASSIFICATION
+
+Filers age 65+ can claim an extra amount of standard deduction.
+The filer is classified as "under age 65" if they did not mark the
+age 65+ check box  (question 33a on the 1040 form), and "age 65+"
+if they did.  Similarly, the spouse of filer is classified as
+"under age 65" if they did not mark the age 65+ check box
+(question 33a on the 1040 form), and "age 65+" if they did.
+Children exemptions are all defined as "under age 65".  Parents'
+exemptions are all defined as "age 65+".  Other exemptions are all
+defined as "under age 65."
+
+
+INCOME DATA
+
+The income amounts represent the taxable income amounts shown on
+the tax forms.  The amounts from the "estate" returns and the "zero
+exemption" returns are included in the tallies.  Aggregate income
+is the sum total of the income amounts from all applicable records.
+Median income is derived from an income distribution tally, with
+linear interpolation within the data cell in which the median is
+included.
+
+Wage and Salary Income includes income from wages, salaries, tips,
+etc (see line 7 on the form 1040)
+
+Interest Income includes taxable interest income and the non-
+taxable interest income (see lines 8a and 8b in the form 1040)
+
+Dividend income includes taxable distributions of money, stock, or
+other property received from domestic or foreign corporations,
+excluding non-taxable distributions or distributions that are
+treated as interest income (see line 9 on the form 1040).
+
+Gross rent and royalty income includes the income from rents,
+royalties, partnerships, estates, trusts, etc. as reported on
+Schedule E, excluding deductions for depreciation and business
+expenses.
+
+Adjusted gross income includes the taxable income from all sources,
+less the adjustments to income, such as IRS deduction, self
+employment tax and health insurance, alimony paid, etc.  (See line
+32 on the form 1040).
+
+Total income is a special definition which most closely
+approximates the Census Bureau's definition of total income.  It is
+the sum of the following items:
+
+    1. wage and salary
+    2. total interest (taxable and tax-exempt)
+    3. dividends (taxable)
+    4. alimony received
+    5. business income (or loss)
+    6. total pensions and annuities
+    7. net rents, royalties, estates, trusts, etc. (or loss)
+    8. farm income (or loss)
+    9. unemployment compensation
+   10. total social security benefits (taxable and nontaxable)
+
+Note that it does not include (a) capital gains distributions
+(lines 13 and 14 on the form 1040), (b) taxable refunds or credits
+from state or local income taxes (line 10 on the form 1040), or (c)
+other income (line 21 on the form 1040).  Also, it does not include
+the IRS' adjustments to income (lines 23 to 30a on the 1040).
+
+
+TOTAL MATCHED RETURNS
+
+The tax returns that are matched between year-1 and year-2, are not
+"estate" or zero exemption" returns, and that are coded to state/
+county in both years are included.  We also include any year-2 only
+return that is a 1040NR and that is coded to state/ county.  The
+matched returns are subclassified into non-migrants, 3 classes of
+out-migrants and 3 classes of in-migrants.
+
+
+NON-MIGRANT
+
+A matched return is classified as a "non-migrant" at the county
+level if the return is a non-mover, or if the year-1 state/ county
+code is the same as the year-2 state/ county code.  A matched
+return is classified as a "non-migrant" at the state level if the
+return is a non-mover, or if the year-1 state code is the same as
+the year-2 state code.
+
+
+MIGRANT
+
+A matched return is classified as a "migrant" at the county level
+if the return is a mover, and if the year-1 state/ county code is
+different from the year-2 state/ county code.  A matched return is
+classified as a "migrant" at the state level if the return is a
+mover, and if the year-1 state code is different from the year-2
+state code. The migrants are tabulated twice in all the migration
+data products: (1) as an out-migrant from the origin (year-1) state
+or county; and (2) as an in-migrant to the destination (year-2)
+state or county.  The total out-migration and the total in-
+migration are shown in all the migration data products.  In
+addition, subclassifications of the migration are also shown.  For
+example, the State and County Gross Migration data product shows
+three subclassifications of out-migration and in-migration.  It
+shows: (1) the out-migration to a different county in the same
+state; (2) the out-migration to a different state in the U.S.;  (3)
+the out-migration to foreign;  (4) the in-migration from a
+different county in the same state; (5) the in-migration from a
+different state in the U.S.; and (6) the in-migration from foreign.
+
+
+OUT-MIGRANT TO FOREIGN
+
+A migrant is classified as an "out-migrant to foreign" if the year-
+2 state code is foreign (either APO/ FPO, Puerto Rico,
+Virgin Islands, or other).
+
+
+OUT-MIGRANT TO DIFFERENT STATE
+
+A migrant is classified as an "out-migrant to different state" if
+the year-2 state code is in the U.S., and the year-1 state code and
+the year-2 state codes are different.
+
+
+OUT-MIGRANT TO SAME STATE DIFFERENT COUNTY
+
+A migrant is classified as an "out-migrant to same state different
+county" if the year-2 state code is in the U.S., and the year-1
+state code and the year-2 state codes are the same, but the year-1
+county code and the year-2 county codes are different.  Note that
+this data cell is not defined for states, or for the county level
+equivalent of the District of Columbia.
+
+
+IN-MIGRANT FROM FOREIGN
+
+A migrant is classified as an "in-migrant from foreign" if the
+year-1 state code is foreign (either APO/ FPO, Puerto Rico,
+Virgin Islands, or other), or if the return is a year-2 only
+1040NR.
+
+
+IN-MIGRANT FROM DIFFERENT STATE
+
+A migrant is classified as an "in-migrant from different state" if
+the year-1 state code is in the U.S., and the year-1 state code and
+the year-2 state codes are different.
+
+
+IN-MIGRANT FROM SAME STATE DIFFERENT COUNTY
+
+A migrant is classified as an "in-migrant from same state different
+county" if the year-1 state code is in the U.S., and the year-1
+state code and the year-2 state codes are the same, but the year-1
+county code and the year-2 county codes are different.  Note that
+this data cell is not defined for states, or for the county level
+equivalent of the District of Columbia.
+
+
+NON-MATCHED RETURNS
+
+Records that do not match on the primary SSN between the year-1
+file and the year-2 file are classified as nonmatches.  These
+nonmatches are referred to as year-1 onlys (there is a record in
+the year-1 file, but not in the year-2 file) and year-2 onlys
+(there is a record in the year-2 file, but not in the year-1 file).
+
+YEAR-1 ONLY
+
+For the tabulation purposes, the data cell "Year-1 Only" includes
+the year-1 only non-matched returns, and it also includes the
+matched returns that are coded to state/ county in year-1 but not
+coded to state/ county in year-2.
+
+
+YEAR-2 ONLY
+
+For the tabulation purposes, the data cell "Year-2 Only" includes
+the year-2 only non-matched returns, and it also includes the
+matched returns that are coded to state/ county in year-2 but not
+coded to state/ county in year-1.  It also excludes year-2 only
+non-matched returns that heve a return type of "1040NR".
+
+AVERAGE OR MEAN INCOME
+
+The average AGI and average TMI values are not shown on the user
+files, but can be computed by dividing the aggregate income by
+the number of returns.
+
+MEDIAN AGI
+
+The median AGI shown on the user products is derived from grouped
+data.  That is, from a tally of the number of returns in 14 income
+intervals.  The 14 data cells are:
+
+    1 = $-9,999,999 to $0
+    2 = $1 to $4,999
+    3 = $5,000 to $9,999
+    4 = $10,000 to $14,999
+    5 = $15,000 to $19,999
+    6 = $20,000 to $24,999
+    7 = $25,000 to $29,999
+    8 = $30,000 to $34,999
+    9 = $35,000 to $39,999
+   10 = $40,000 to $44,999
+   11 = $45,000 to $49,999
+   12 = $50,000 to $74,999
+   13 = $75,000 to $99,999
+   14 = $100,000 to $99,999,999
+
+If the median falls in cells 2 to 13, then the median is computed
+using standard linear interpolation between the end points of the
+cell.  If the median falls in cell 1, then the median is coded to
+"-1".  If the median falls in cell 14, then the median is coded to
+"1".
+
+
+
+
+
+
+        Part B -- Data Product Content and Comparability
+
+
+STATE AND COUNTY GROSS MIGRATION
+
+The file contains a record for each state, county and county
+equivalent in the U.S. (including the District of Columbia).
+
+There are a total of 44 data cells represented on the file; four
+tally groups by 11 data cells.  The four tally groups are:  the
+number of returns; the number of exemptions (all ages); the number
+of exemptions age under 65; and the number of exemptions age 65 and
+over.  Each tally group contains the following 11 data cells: all
+records; matched records; non-migrants; in-migrants from a
+different county in the same state; in-migrants from a different
+state; in-migrants from foreign; out-migrants to a different county
+in the same state; out-migrants to a different state; out-migrants
+to foreign; Year-1 onlys; and Year-2 onlys.
+
+
+STATE-TO-STATE MIGRATION FLOWS
+
+The State-to-State Migration Flows consists of two separate files,
+one for the in-migration flows and another for the out-migration
+flows.
+
+The in-migration flow file contains records for the state level
+migration flows to each state in the U.S. (including the District
+of Columbia) from other states in the U.S., from foreign, and for
+non-migrants.  There are 3 total records for each state,
+representing the total of all in-migration flows from other states.
+The 3 total records are:
+
+      1.  total of all in-migration flows from other states
+          in the U.S. and from foreign;
+      2.  total of all in-migration flows from other states
+          in the U.S.
+      3.  total of all in-migration flows from foreign
+
+There are also 3 similar records total records representing the sum
+of all in-migration flows for all states in the U.S.
+
+The data items included in the file are: FIPS State codes for the
+origin and the destination states, the 2-character state name
+abbreviations for the origin and the destination states, a state
+name field, the number of returns in the flow, the number of
+exemptions in the flow, the aggregate adjusted gross income for the
+flow, and the median adjusted gross income for the flow.  For the
+1995-1996 migration flow data only, the file also contains two
+extra data cells: the aggregate total money income for the flow,
+and the median total money income for the flow.
+
+The out-migration flow file contains records for the state level
+migration flows from each state in the U.S. (including the District
+of Columbia) to other states in the U.S., to foreign, and for
+non-migrants.  There are 3 total records for each state,
+representing the total of all out-migration flows to other states.
+The 3 total records are:
+
+      1.  total of all out-migration flows to other states
+          in the U.S. and from foreign;
+      2.  total of all out-migration flows to other states
+          in the U.S.
+      3.  total of all out-migration flows to foreign
+
+There are also 3 similar records total records representing the sum
+of all out-migration flows to all states in the U.S.
+
+The data items included in the file are: FIPS State codes for the
+origin and the destination states, the 2-character state name
+abbreviations for the origin and the destination states, a state
+name field, the number of returns in the flow, the number of
+exemptions in the flow, the aggregate adjusted gross income for the
+flow, and the median adjusted gross income for the flow.  For the
+1995-1996 migration flow data only, the file also contains two
+extra data cells: the aggregate total money income for the flow,
+and the median total money income for the flow.
+
+
+COUNTY-TO-COUNTY MIGRATION FLOWS
+
+The County-to-County Migration Flows consists of two separate
+files, one for the in-migration flows and another for the out-
+migration flows.
+
+The in-migration flow file contains records for the county level
+migration flows to each county in the U.S. (including the District
+of Columbia) from other counties in the U.S., from foreign, and for
+non-migrants. (There are 4 foreign categories included: Puerto
+Rico; Virgin Islands; APO/FPO ZIP codes; and foreign countries.)
+Only those in-migration flows containing 10 or more returns are
+included.  The other in-migration flows are aggregated into various
+summary categories.
+
+For each county, there are 5 total records representing the sum of
+all in-migration flows from all areas.
+
+      1.  total of all in-migration flows from other counties
+          in the U.S. and from foreign;
+      2.  total of all in-migration flows from other counties
+          in the U.S.
+      3.  total of all in-migration flows from other counties
+          in same state in the U.S.
+      4.  total of all in-migration flows from other counties
+          in different states in the U.S.
+      5.  total of all in-migration flows from foreign
+
+These total records are also summed up to the state, and to the
+U.S. and included on the file.
+
+The data items included in the file are: FIPS State and county
+codes for the origin and the destination states, the 2-character
+state name abbreviation, a county name field, the number of returns
+in the flow, the number of total exemptions in the flow, the
+aggregate adjusted gross income for the flow, and the median
+adjusted gross income for the flow.  For the 1995-1996 migration
+flow data only, the file also contains two extra data cells: the
+aggregate total money income for the flow, and the median total
+money income for the flow.
+
+The out-migration flow file contains records for the county level
+migration flows from each county in the U.S. (including the
+District of Columbia) to other counties in the U.S., to foreign,
+and for non-migrants. (There are 4 foreign categories included:
+Puerto Rico; Virgin Islands; APO/FPO ZIP codes; and foreign
+countries.)  Only those out-migration flows containing 10 or more
+returns are included.  The other out-migration flows are aggregated
+into various summary categories.
+
+For each county, there are 5 total records representing the sum of
+all out-migration flows to all areas.
+
+      1.  total of all out-migration flows to other counties
+          in the U.S. and to foreign;
+      2.  total of all out-migration flows to other counties
+          in the U.S.
+      3.  total of all out-migration flows to other counties
+          in same state in the U.S.
+      4.  total of all out-migration flows to other counties
+          in different states in the U.S.
+      5.  total of all out-migration flows to foreign
+
+These total records are also summed up to the state, and to the
+U.S. and included on the file.
+
+The data items included in the file are: FIPS State and county
+codes for the origin and the destination states, the 2-character
+state name abbreviation, a county name field, the number of returns
+in the flow, the number of total exemptions in the flow, the
+aggregate adjusted gross income for the flow, and the median
+adjusted gross income for the flow.  For the 1995-1996 migration
+flow data only, the file also contains two extra data cells: the
+aggregate total money income for the flow, and the median total
+money income for the flow.
+
+
+COMPARABILITY OF DATA ITEMS BETWEEN PRODUCTS
+
+The total number of returns is not shown in the State-to-State Migration 
+Flows or the County-to-County migration flows.
+
+The number of returns and total exemptions for non-migrants from
+the State and County Gross Migration File match the corresponding
+numbers for non-migrants contained in the State-to-State Migration
+Flows and the County-to-County Migration Flows.
+
+The State-to-State Migration Flows and the County-to-County
+Migration Flows include total migration numbers derived from the
+sum of all the individual migration flows.  These totals match the
+corresponding numbers in the State and County Gross Migration File.
+
+
+SUPPRESSION OF DATA
+
+In order to protect the confidentiality of information for
+individual taxpayers, data cells that are based on a small number
+of returns will not be shown.  For state level tabulations, the
+cell must be based on atleast 3 returns to be shown.  For county
+level tabulations, the cell must be based on atleast 10 returns to
+be shown.  All other data cells will be suppressed.  The
+suppression procedures are designed to maintain additivity across
+and within geographic levels, and comparability across data
+products.
+
+A variety of suppression methods are used.  The data cell may be
+suppressed by replacing the data with "d".  The data may be
+suppressed by adding the value into another data cell, and
+replacing the value with "d".  The data cell may be suppressed by
+adding the value into the value for another piece of geography, and
+replacing the value with "d".  Data cells may be suppressed by
+accumulating the data into higher level geographic levels, and not
+showing the lowest geographic level.  In addition to the direct
+suppression if selected data cells, complimentary suppression of
+other data cells may be done to prevent the rederivation of
+suppressed data from the totals or from other data products.
+Complimentary suppression may be done across data cells or across
+geography.
+
+Part H of this document provides for the detailed suppression
+procedures used in each of the 4 data products.  This section is
+not generally distributed as a part of this documentation package,
+but can be made available upon request.
+
+
+
+
+
+
+         Part C -- Code List for States and U.S.
+
+
+US  U.S. Total           00-000
+
+AL  Alabama              01-000     MT  Montana            30-000
+AK  Alaska               02-000     NE  Nebraska           31-000
+AZ  Arizona              04-000     NV  Nevada             32-000
+AR  Arkansas             05-000     NH  New Hampshire      33-000
+CA  California           06-000     NJ  New Jersey         34-000
+CO  Colorado             08-000     NM  New Mexico         35-000
+CT  Connecticut          09-000     NY  New York           36-000
+DE  Delaware             10-000     NC  North Carolina     37-000
+DC  District of Columbia 11-000     ND  North Dakota       38-000
+FL  Florida              12-000     OH  Ohio               39-000
+GA  Georgia              13-000     OK  Oklahoma           40-000
+HI  Hawaii               15-000     OR  Oregon             41-000
+ID  Idaho                16-000     PA  Pennsylvania       42-000
+IL  Illinois             17-000     RI  Rhode Island       44-000
+IN  Indiana              18-000     SC  South Carolina     45-000
+IA  Iowa                 19-000     SD  South Dakota       46-000
+KS  Kansas               20-000     TN  Tennessee          47-000
+KY  Kentucky             21-000     TX  Texas              48-000
+LA  Louisiana            22-000     UT  Utah               49-000
+ME  Maine                23-000     VT  Vermont            50-000
+MD  Maryland             24-000     VA  Virginia           51-000
+MA  Massachusetts        25-000     WA  Washington         53-000
+MI  Michigan             26-000     WV  West Virginia      54-000
+MN  Minnesota            27-000     WI  Wisconsin          55-000
+MS  Mississippi          28-000     WY  Wyoming            56-000
+MO  Missouri             29-000     FR  Foreign            57-000
+
+
+
+
+
+
+     Part D -- Code List for Summary Level Categories
+     in the State-to-State Migration Flow Data
+
+
+               Totals of All Migration Flows:
+
+Total migration                                      96-000
+Total migration to/from U.S.                         97-000
+Total migration to/from foreign                      98-000
+
+
+                     Non-Migrants:
+
+Special codes for non-migrants are not used.  The record can be
+identified where the origin state code is the same as the
+destination state code.
+
+
+
+
+
+
+              Part E -- Code List for Counties
+
+
+                                  01-087   MACON COUNTY
+01-000   ALABAMA                  01-089   MADISON COUNTY
+01-001   AUTAUGA COUNTY           01-091   MARENGO COUNTY
+01-003   BALDWIN COUNTY           01-093   MARION COUNTY
+01-005   BARBOUR COUNTY           01-095   MARSHALL COUNTY
+01-007   BIBB COUNTY              01-097   MOBILE COUNTY
+01-009   BLOUNT COUNTY            01-099   MONROE COUNTY
+01-011   BULLOCK COUNTY           01-101   MONTGOMERY COUNTY
+01-013   BUTLER COUNTY            01-103   MORGAN COUNTY
+01-015   CALHOUN COUNTY           01-105   PERRY COUNTY
+01-017   CHAMBERS COUNTY          01-107   PICKENS COUNTY
+01-019   CHEROKEE COUNTY          01-109   PIKE COUNTY
+01-021   CHILTON COUNTY           01-111   RANDOLPH COUNTY
+01-023   CHOCTAW COUNTY           01-113   RUSSELL COUNTY
+01-025   CLARKE COUNTY            01-115   ST. CLAIR COUNTY
+01-027   CLAY COUNTY              01-117   SHELBY COUNTY
+01-029   CLEBURNE COUNTY          01-119   SUMTER COUNTY
+01-031   COFFEE COUNTY            01-121   TALLADEGA COUNTY
+01-033   COLBERT COUNTY           01-123   TALLAPOOSA COUNTY
+01-035   CONECUH COUNTY           01-125   TUSCALOOSA COUNTY
+01-037   COOSA COUNTY             01-127   WALKER COUNTY
+01-039   COVINGTON COUNTY         01-129   WASHINGTON COUNTY
+01-041   CRENSHAW COUNTY          01-131   WILCOX COUNTY
+01-043   CULLMAN COUNTY           01-133   WINSTON COUNTY
+01-045   DALE COUNTY
+01-047   DALLAS COUNTY            02-000   ALASKA
+01-049   DE KALB COUNTY           02-013   ALEUTIANS EAST BOROU
+01-051   ELMORE COUNTY            02-016   ALEUTIANS WEST CENSU
+01-053   ESCAMBIA COUNTY          02-020   ANCHORAGE BOROUGH
+01-055   ETOWAH COUNTY            02-050   BETHEL CENSUS AREA
+01-057   FAYETTE COUNTY           02-060   BRISTOL BAY BOROUGH
+01-059   FRANKLIN COUNTY          02-068   DENALI BOROUGH
+01-061   GENEVA COUNTY            02-070   DILLINGHAM CENSUS AR
+01-063   GREENE COUNTY            02-090   FAIRBANKS NORTH STAR
+01-065   HALE COUNTY              02-100   HAINES BOROUGH
+01-067   HENRY COUNTY             02-110   JUNEAU BOROUGH
+01-069   HOUSTON COUNTY           02-122   KENAI PENINSULA BORO
+01-071   JACKSON COUNTY           02-130   KETCHIKAN GATEWAY BO
+01-073   JEFFERSON COUNTY         02-150   KODIAK ISLAND BOROUG
+01-075   LAMAR COUNTY             02-164   LAKE AND PENINSULA B
+01-077   LAUDERDALE COUNTY        02-170   MATANUSKA-SUSITNA BO
+01-079   LAWRENCE COUNTY          02-180   NOME CENSUS AREA
+01-081   LEE COUNTY               02-185   NORTH SLOPE BOROUGH
+01-083   LIMESTONE COUNTY         02-188   NORTHWEST ARCTIC BOR
+01-085   LOWNDES COUNTY           02-201   PRINCE OF WALES-OUTE
+
+
+
+
+
+
+02-220   SITKA BOROUGH            05-043   DREW COUNTY
+02-232   SKAGWAY-HOONAH -ANGO     05-045   FAULKNER COUNTY
+02-240   SOUTHEAST FAIRBANKS      05-047   FRANKLIN COUNTY
+02-261   VALDEZ-CORDOVA CENSU     05-049   FULTON COUNTY
+02-270   WADE HAMPTON CENSUS      05-051   GARLAND COUNTY
+02-280   WRANGELL-PETERSBURG      05-053   GRANT COUNTY
+02-282   YAKUTAT BOROUGH          05-055   GREENE COUNTY
+02-290   YUKON-KOYUKUK CENSUS     05-057   HEMPSTEAD COUNTY
+                                  05-059   HOT SPRING COUNTY
+04-000   ARIZONA                  05-061   HOWARD COUNTY
+04-001   APACHE COUNTY            05-063   INDEPENDENCE COUNTY
+04-003   COCHISE COUNTY           05-065   IZARD COUNTY
+04-005   COCONINO COUNTY          05-067   JACKSON COUNTY
+04-007   GILA COUNTY              05-069   JEFFERSON COUNTY
+04-009   GRAHAM COUNTY            05-071   JOHNSON COUNTY
+04-011   GREENLEE COUNTY          05-073   LAFAYETTE COUNTY
+04-012   LA PAZ COUNTY            05-075   LAWRENCE COUNTY
+04-013   MARICOPA COUNTY          05-077   LEE COUNTY
+04-015   MOHAVE COUNTY            05-079   LINCOLN COUNTY
+04-017   NAVAJO COUNTY            05-081   LITTLE RIVER COUNTY
+04-019   PIMA COUNTY              05-083   LOGAN COUNTY
+04-021   PINAL COUNTY             05-085   LONOKE COUNTY
+04-023   SANTA CRUZ COUNTY        05-087   MADISON COUNTY
+04-025   YAVAPAI COUNTY           05-089   MARION COUNTY
+04-027   YUMA COUNTY              05-091   MILLER COUNTY
+                                  05-093   MISSISSIPPI COUNTY
+05-000   ARKANSAS                 05-095   MONROE COUNTY
+05-001   ARKANSAS COUNTY          05-097   MONTGOMERY COUNTY
+05-003   ASHLEY COUNTY            05-099   NEVADA COUNTY
+05-005   BAXTER COUNTY            05-101   NEWTON COUNTY
+05-007   BENTON COUNTY            05-103   OUACHITA COUNTY
+05-009   BOONE COUNTY             05-105   PERRY COUNTY
+05-011   BRADLEY COUNTY           05-107   PHILLIPS COUNTY
+05-013   CALHOUN COUNTY           05-109   PIKE COUNTY
+05-015   CARROLL COUNTY           05-111   POINSETT COUNTY
+05-017   CHICOT COUNTY            05-113   POLK COUNTY
+05-019   CLARK COUNTY             05-115   POPE COUNTY
+05-021   CLAY COUNTY              05-117   PRAIRIE COUNTY
+05-023   CLEBURNE COUNTY          05-119   PULASKI COUNTY
+05-025   CLEVELAND COUNTY         05-121   RANDOLPH COUNTY
+05-027   COLUMBIA COUNTY          05-123   ST. FRANCIS COUNTY
+05-029   CONWAY COUNTY            05-125   SALINE COUNTY
+05-031   CRAIGHEAD COUNTY         05-127   SCOTT COUNTY
+05-033   CRAWFORD COUNTY          05-129   SEARCY COUNTY
+05-035   CRITTENDEN COUNTY        05-131   SEBASTIAN COUNTY
+05-037   CROSS COUNTY             05-133   SEVIER COUNTY
+05-039   DALLAS COUNTY            05-135   SHARP COUNTY
+05-041   DESHA COUNTY             05-137   STONE COUNTY
+
+
+
+
+
+
+05-139   UNION COUNTY             06-081   SAN MATEO COUNTY
+05-141   VAN BUREN COUNTY         06-083   SANTA BARBARA COUNTY
+05-143   WASHINGTON COUNTY        06-085   SANTA CLARA COUNTY
+05-145   WHITE COUNTY             06-087   SANTA CRUZ COUNTY
+05-147   WOODRUFF COUNTY          06-089   SHASTA COUNTY
+05-149   YELL COUNTY              06-091   SIERRA COUNTY
+                                  06-093   SISKIYOU COUNTY
+06-000   CALIFORNIA               06-095   SOLANO COUNTY
+06-001   ALAMEDA COUNTY           06-097   SONOMA COUNTY
+06-003   ALPINE COUNTY            06-099   STANISLAUS COUNTY
+06-005   AMADOR COUNTY            06-101   SUTTER COUNTY
+06-007   BUTTE COUNTY             06-103   TEHAMA COUNTY
+06-009   CALAVERAS COUNTY         06-105   TRINITY COUNTY
+06-011   COLUSA COUNTY            06-107   TULARE COUNTY
+06-013   CONTRA COSTA COUNTY      06-109   TUOLUMNE COUNTY
+06-015   DEL NORTE COUNTY         06-111   VENTURA COUNTY
+06-017   EL DORADO COUNTY         06-113   YOLO COUNTY
+06-019   FRESNO COUNTY            06-115   YUBA COUNTY
+06-021   GLENN COUNTY
+06-023   HUMBOLDT COUNTY          08-000   COLORADO
+06-025   IMPERIAL COUNTY          08-001   ADAMS COUNTY
+06-027   INYO COUNTY              08-003   ALAMOSA COUNTY
+06-029   KERN COUNTY              08-005   ARAPAHOE COUNTY
+06-031   KINGS COUNTY             08-007   ARCHULETA COUNTY
+06-033   LAKE COUNTY              08-009   BACA COUNTY
+06-035   LASSEN COUNTY            08-011   BENT COUNTY
+06-037   LOS ANGELES COUNTY       08-013   BOULDER COUNTY
+                                  08-014   BROOMFIELD COUNTY
+06-039   MADERA COUNTY            08-015   CHAFFEE COUNTY
+06-041   MARIN COUNTY             08-017   CHEYENNE COUNTY
+06-043   MARIPOSA COUNTY          08-019   CLEAR CREEK COUNTY
+06-045   MENDOCINO COUNTY         08-021   CONEJOS COUNTY
+06-047   MERCED COUNTY            08-023   COSTILLA COUNTY
+06-049   MODOC COUNTY             08-025   CROWLEY COUNTY
+06-051   MONO COUNTY              08-027   CUSTER COUNTY
+06-053   MONTEREY COUNTY          08-029   DELTA COUNTY
+06-055   NAPA COUNTY              08-031   DENVER COUNTY
+06-057   NEVADA COUNTY            08-033   DOLORES COUNTY
+06-059   ORANGE COUNTY            08-035   DOUGLAS COUNTY
+06-061   PLACER COUNTY            08-037   EAGLE COUNTY
+06-063   PLUMAS COUNTY            08-039   ELBERT COUNTY
+06-065   RIVERSIDE COUNTY         08-041   EL PASO COUNTY
+06-067   SACRAMENTO COUNTY        08-043   FREMONT COUNTY
+06-069   SAN BENITO COUNTY        08-045   GARFIELD COUNTY
+06-071   SAN BERNARDINO COUNT     08-047   GILPIN COUNTY
+06-073   SAN DIEGO COUNTY         08-049   GRAND COUNTY
+06-075   SAN FRANCISCO COUNTY     08-051   GUNNISON COUNTY
+06-077   SAN JOAQUIN COUNTY       08-053   HINSDALE COUNTY
+06-079   SAN LUIS OBISPO COUN     08-055   HUERFANO COUNTY
+
+
+
+
+
+
+08-057   JACKSON COUNTY           10-003   NEW CASTLE COUNTY
+08-059   JEFFERSON COUNTY         10-005   SUSSEX COUNTY
+08-061   KIOWA COUNTY
+08-063   KIT CARSON COUNTY        11-000   DISTRICT OF COLUMBIA
+08-065   LAKE COUNTY              11-001   DISTRICT OF COLUMBIA
+08-067   LA PLATA COUNTY
+08-069   LARIMER COUNTY           12-000   FLORIDA
+08-071   LAS ANIMAS COUNTY        12-001   ALACHUA COUNTY
+08-073   LINCOLN COUNTY           12-003   BAKER COUNTY
+08-075   LOGAN COUNTY             12-005   BAY COUNTY
+08-077   MESA COUNTY              12-007   BRADFORD COUNTY
+08-079   MINERAL COUNTY           12-009   BREVARD COUNTY
+08-081   MOFFAT COUNTY            12-011   BROWARD COUNTY
+08-083   MONTEZUMA COUNTY         12-013   CALHOUN COUNTY
+08-085   MONTROSE COUNTY          12-015   CHARLOTTE COUNTY
+08-087   MORGAN COUNTY            12-017   CITRUS COUNTY
+08-089   OTERO COUNTY             12-019   CLAY COUNTY
+08-091   OURAY COUNTY             12-021   COLLIER COUNTY
+08-093   PARK COUNTY              12-023   COLUMBIA COUNTY
+08-095   PHILLIPS COUNTY
+08-097   PITKIN COUNTY            12-027   DE SOTO COUNTY
+08-099   PROWERS COUNTY           12-029   DIXIE COUNTY
+08-101   PUEBLO COUNTY            12-031   DUVAL COUNTY
+08-103   RIO BLANCO COUNTY        12-033   ESCAMBIA COUNTY
+08-105   RIO GRANDE COUNTY        12-035   FLAGLER COUNTY
+08-107   ROUTT COUNTY             12-037   FRANKLIN COUNTY
+08-109   SAGUACHE COUNTY          12-039   GADSDEN COUNTY
+08-111   SAN JUAN COUNTY          12-041   GILCHRIST COUNTY
+08-113   SAN MIGUEL COUNTY        12-043   GLADES COUNTY
+08-115   SEDGWICK COUNTY          12-045   GULF COUNTY
+08-117   SUMMIT COUNTY            12-047   HAMILTON COUNTY
+08-119   TELLER COUNTY            12-049   HARDEE COUNTY
+08-121   WASHINGTON COUNTY        12-051   HENDRY COUNTY
+08-123   WELD COUNTY              12-053   HERNANDO COUNTY
+08-125   YUMA COUNTY              12-055   HIGHLANDS COUNTY
+                                  12-057   HILLSBOROUGH COUNTY
+09-000   CONNECTICUT              12-059   HOLMES COUNTY
+09-001   FAIRFIELD COUNTY         12-061   INDIAN RIVER COUNTY
+09-003   HARTFORD COUNTY          12-063   JACKSON COUNTY
+09-005   LITCHFIELD COUNTY        12-065   JEFFERSON COUNTY
+09-007   MIDDLESEX COUNTY         12-067   LAFAYETTE COUNTY
+09-009   NEW HAVEN COUNTY         12-069   LAKE COUNTY
+09-011   NEW LONDON COUNTY        12-071   LEE COUNTY
+09-013   TOLLAND COUNTY           12-073   LEON COUNTY
+09-015   WINDHAM COUNTY           12-075   LEVY COUNTY
+                                  12-077   LIBERTY COUNTY
+10-000   DELAWARE                 12-079   MADISON COUNTY
+10-001   KENT COUNTY              12-081   MANATEE COUNTY
+
+
+
+
+
+
+12-083   MARION COUNTY            13-043   CANDLER COUNTY
+12-085   MARTIN COUNTY            13-045   CARROLL COUNTY
+12-086   MIAMI-DADE COUNTY
+12-087   MONROE COUNTY            13-047   CATOOSA COUNTY
+12-089   NASSAU COUNTY            13-049   CHARLTON COUNTY
+12-091   OKALOOSA COUNTY          13-051   CHATHAM COUNTY
+12-093   OKEECHOBEE COUNTY        13-053   CHATTAHOOCHEE COUNTY
+12-095   ORANGE COUNTY            13-055   CHATTOOGA COUNTY
+12-097   OSCEOLA COUNTY           13-057   CHEROKEE COUNTY
+12-099   PALM BEACH COUNTY        13-059   CLARKE COUNTY
+12-101   PASCO COUNTY             13-061   CLAY COUNTY
+12-103   PINELLAS COUNTY          13-063   CLAYTON COUNTY
+12-105   POLK COUNTY              13-065   CLINCH COUNTY
+12-107   PUTNAM COUNTY            13-067   COBB COUNTY
+12-109   ST. JOHNS COUNTY         13-069   COFFEE COUNTY
+12-111   ST. LUCIE COUNTY         13-071   COLQUITT COUNTY
+12-113   SANTA ROSA COUNTY        13-073   COLUMBIA COUNTY
+12-115   SARASOTA COUNTY          13-075   COOK COUNTY
+12-117   SEMINOLE COUNTY          13-077   COWETA COUNTY
+12-119   SUMTER COUNTY            13-079   CRAWFORD COUNTY
+12-121   SUWANNEE COUNTY          13-081   CRISP COUNTY
+12-123   TAYLOR COUNTY            13-083   DADE COUNTY
+12-125   UNION COUNTY             13-085   DAWSON COUNTY
+12-127   VOLUSIA COUNTY           13-087   DECATUR COUNTY
+12-129   WAKULLA COUNTY           13-089   DE KALB COUNTY
+12-131   WALTON COUNTY            13-091   DODGE COUNTY
+12-133   WASHINGTON COUNTY        13-093   DOOLY COUNTY
+                                  13-095   DOUGHERTY COUNTY
+13-000   GEORGIA                  13-097   DOUGLAS COUNTY
+13-001   APPLING COUNTY           13-099   EARLY COUNTY
+13-003   ATKINSON COUNTY          13-101   ECHOLS COUNTY
+13-005   BACON COUNTY             13-103   EFFINGHAM COUNTY
+13-007   BAKER COUNTY             13-105   ELBERT COUNTY
+13-009   BALDWIN COUNTY           13-107   EMANUEL COUNTY
+13-011   BANKS COUNTY             13-109   EVANS COUNTY
+13-013   BARROW COUNTY            13-111   FANNIN COUNTY
+13-015   BARTOW COUNTY            13-113   FAYETTE COUNTY
+13-017   BEN HILL COUNTY          13-115   FLOYD COUNTY
+13-019   BERRIEN COUNTY           13-117   FORSYTH COUNTY
+13-021   BIBB COUNTY              13-119   FRANKLIN COUNTY
+13-023   BLECKLEY COUNTY          13-121   FULTON COUNTY
+13-025   BRANTLEY COUNTY          13-123   GILMER COUNTY
+13-027   BROOKS COUNTY            13-125   GLASCOCK COUNTY
+13-029   BRYAN COUNTY             13-127   GLYNN COUNTY
+13-031   BULLOCH COUNTY           13-129   GORDON COUNTY
+13-033   BURKE COUNTY             13-131   GRADY COUNTY
+13-035   BUTTS COUNTY             13-133   GREENE COUNTY
+13-037   CALHOUN COUNTY           13-135   GWINNETT COUNTY
+13-039   CAMDEN COUNTY            13-137   HABERSHAM COUNTY
+
+
+
+
+
+
+13-139   HALL COUNTY              13-237   PUTNAM COUNTY
+13-141   HANCOCK COUNTY           13-239   QUITMAN COUNTY
+13-143   HARALSON COUNTY          13-241   RABUN COUNTY
+13-145   HARRIS COUNTY            13-243   RANDOLPH COUNTY
+13-147   HART COUNTY              13-245   RICHMOND COUNTY
+13-149   HEARD COUNTY             13-247   ROCKDALE COUNTY
+13-151   HENRY COUNTY             13-249   SCHLEY COUNTY
+13-153   HOUSTON COUNTY           13-251   SCREVEN COUNTY
+13-155   IRWIN COUNTY             13-253   SEMINOLE COUNTY
+13-157   JACKSON COUNTY           13-255   SPALDING COUNTY
+13-159   JASPER COUNTY            13-257   STEPHENS COUNTY
+13-161   JEFF DAVIS COUNTY        13-259   STEWART COUNTY
+13-163   JEFFERSON COUNTY         13-261   SUMTER COUNTY
+13-165   JENKINS COUNTY           13-263   TALBOT COUNTY
+13-167   JOHNSON COUNTY           13-265   TALIAFERRO COUNTY
+13-169   JONES COUNTY             13-267   TATTNALL COUNTY
+13-171   LAMAR COUNTY             13-269   TAYLOR COUNTY
+13-173   LANIER COUNTY            13-271   TELFAIR COUNTY
+13-175   LAURENS COUNTY           13-273   TERRELL COUNTY
+13-177   LEE COUNTY               13-275   THOMAS COUNTY
+13-179   LIBERTY COUNTY           13-277   TIFT COUNTY
+13-181   LINCOLN COUNTY           13-279   TOOMBS COUNTY
+13-183   LONG COUNTY              13-281   TOWNS COUNTY
+13-185   LOWNDES COUNTY           13-283   TREUTLEN COUNTY
+13-187   LUMPKIN COUNTY           13-285   TROUP COUNTY
+13-189   MCDUFFIE COUNTY          13-287   TURNER COUNTY
+13-191   MCINTOSH COUNTY          13-289   TWIGGS COUNTY
+13-193   MACON COUNTY             13-291   UNION COUNTY
+13-195   MADISON COUNTY           13-293   UPSON COUNTY
+13-197   MARION COUNTY            13-295   WALKER COUNTY
+13-199   MERIWETHER COUNTY        13-297   WALTON COUNTY
+13-201   MILLER COUNTY            13-299   WARE COUNTY
+13-205   MITCHELL COUNTY          13-301   WARREN COUNTY
+13-207   MONROE COUNTY            13-303   WASHINGTON COUNTY
+13-209   MONTGOMERY COUNTY        13-305   WAYNE COUNTY
+13-211   MORGAN COUNTY            13-307   WEBSTER COUNTY
+13-213   MURRAY COUNTY            13-309   WHEELER COUNTY
+13-215   MUSCOGEE COUNTY          13-311   WHITE COUNTY
+13-217   NEWTON COUNTY            13-313   WHITFIELD COUNTY
+13-219   OCONEE COUNTY            13-315   WILCOX COUNTY
+13-221   OGLETHORPE COUNTY        13-317   WILKES COUNTY
+13-223   PAULDING COUNTY          13-319   WILKINSON COUNTY
+13-225   PEACH COUNTY             13-321   WORTH COUNTY
+13-227   PICKENS COUNTY
+13-229   PIERCE COUNTY            15-000   HAWAII
+13-231   PIKE COUNTY              15-001   HAWAII COUNTY
+13-233   POLK COUNTY              15-003   HONOLULU COUNTY
+13-235   PULASKI COUNTY           15-005   KALAWAO COUNTY
+
+
+
+
+
+
+15-007   KAUAI COUNTY
+15-009   MAUI COUNTY              17-000   ILLINOIS
+                                  17-001   ADAMS COUNTY
+16-000   IDAHO                    17-003   ALEXANDER COUNTY
+16-001   ADA COUNTY               17-005   BOND COUNTY
+16-003   ADAMS COUNTY             17-007   BOONE COUNTY
+16-005   BANNOCK COUNTY           17-009   BROWN COUNTY
+16-007   BEAR LAKE COUNTY         17-011   BUREAU COUNTY
+16-009   BENEWAH COUNTY           17-013   CALHOUN COUNTY
+16-011   BINGHAM COUNTY           17-015   CARROLL COUNTY
+16-013   BLAINE COUNTY            17-017   CASS COUNTY
+16-015   BOISE COUNTY             17-019   CHAMPAIGN COUNTY
+16-017   BONNER COUNTY            17-021   CHRISTIAN COUNTY
+16-019   BONNEVILLE COUNTY        17-023   CLARK COUNTY
+16-021   BOUNDARY COUNTY          17-025   CLAY COUNTY
+16-023   BUTTE COUNTY             17-027   CLINTON COUNTY
+16-025   CAMAS COUNTY             17-029   COLES COUNTY
+16-027   CANYON COUNTY            17-031   COOK COUNTY
+16-029   CARIBOU COUNTY           17-033   CRAWFORD COUNTY
+16-031   CASSIA COUNTY            17-035   CUMBERLAND COUNTY
+16-033   CLARK COUNTY             17-037   DE KALB COUNTY
+16-035   CLEARWATER COUNTY        17-039   DE WITT COUNTY
+16-037   CUSTER COUNTY            17-041   DOUGLAS COUNTY
+16-039   ELMORE COUNTY            17-043   DU PAGE COUNTY
+16-041   FRANKLIN COUNTY          17-045   EDGAR COUNTY
+16-043   FREMONT COUNTY           17-047   EDWARDS COUNTY
+16-045   GEM COUNTY               17-049   EFFINGHAM COUNTY
+16-047   GOODING COUNTY           17-051   FAYETTE COUNTY
+16-049   IDAHO COUNTY             17-053   FORD COUNTY
+16-051   JEFFERSON COUNTY         17-055   FRANKLIN COUNTY
+16-053   JEROME COUNTY            17-057   FULTON COUNTY
+16-055   KOOTENAI COUNTY          17-059   GALLATIN COUNTY
+16-057   LATAH COUNTY             17-061   GREENE COUNTY
+16-059   LEMHI COUNTY             17-063   GRUNDY COUNTY
+16-061   LEWIS COUNTY             17-065   HAMILTON COUNTY
+16-063   LINCOLN COUNTY           17-067   HANCOCK COUNTY
+16-065   MADISON COUNTY           17-069   HARDIN COUNTY
+16-067   MINIDOKA COUNTY          17-071   HENDERSON COUNTY
+16-069   NEZ PERCE COUNTY         17-073   HENRY COUNTY
+16-071   ONEIDA COUNTY            17-075   IROQUOIS COUNTY
+16-073   OWYHEE COUNTY            17-077   JACKSON COUNTY
+16-075   PAYETTE COUNTY           17-079   JASPER COUNTY
+16-077   POWER COUNTY             17-081   JEFFERSON COUNTY
+16-079   SHOSHONE COUNTY          17-083   JERSEY COUNTY
+16-081   TETON COUNTY             17-085   JO DAVIESS COUNTY
+16-083   TWIN FALLS COUNTY        17-087   JOHNSON COUNTY
+16-085   VALLEY COUNTY            17-089   KANE COUNTY
+16-087   WASHINGTON COUNTY        17-091   KANKAKEE COUNTY
+
+
+
+
+
+
+17-093   KENDALL COUNTY           17-189   WASHINGTON COUNTY
+17-095   KNOX COUNTY              17-191   WAYNE COUNTY
+17-097   LAKE COUNTY              17-193   WHITE COUNTY
+17-099   LA SALLE COUNTY          17-195   WHITESIDE COUNTY
+17-101   LAWRENCE COUNTY          17-197   WILL COUNTY
+17-103   LEE COUNTY               17-199   WILLIAMSON COUNTY
+17-105   LIVINGSTON COUNTY        17-201   WINNEBAGO COUNTY
+17-107   LOGAN COUNTY             17-203   WOODFORD COUNTY
+17-109   MCDONOUGH COUNTY
+17-111   MCHENRY COUNTY           18-000   INDIANA
+17-113   MCLEAN COUNTY            18-001   ADAMS COUNTY
+17-115   MACON COUNTY             18-003   ALLEN COUNTY
+17-117   MACOUPIN COUNTY          18-005   BARTHOLOMEW COUNTY
+17-119   MADISON COUNTY           18-007   BENTON COUNTY
+17-121   MARION COUNTY            18-009   BLACKFORD COUNTY
+17-123   MARSHALL COUNTY          18-011   BOONE COUNTY
+17-125   MASON COUNTY             18-013   BROWN COUNTY
+17-127   MASSAC COUNTY            18-015   CARROLL COUNTY
+17-129   MENARD COUNTY            18-017   CASS COUNTY
+17-131   MERCER COUNTY            18-019   CLARK COUNTY
+17-133   MONROE COUNTY            18-021   CLAY COUNTY
+17-135   MONTGOMERY COUNTY        18-023   CLINTON COUNTY
+17-137   MORGAN COUNTY            18-025   CRAWFORD COUNTY
+17-139   MOULTRIE COUNTY          18-027   DAVIESS COUNTY
+17-141   OGLE COUNTY              18-029   DEARBORN COUNTY
+17-143   PEORIA COUNTY            18-031   DECATUR COUNTY
+17-145   PERRY COUNTY             18-033   DE KALB COUNTY
+17-147   PIATT COUNTY             18-035   DELAWARE COUNTY
+17-149   PIKE COUNTY              18-037   DUBOIS COUNTY
+17-151   POPE COUNTY              18-039   ELKHART COUNTY
+17-153   PULASKI COUNTY           18-041   FAYETTE COUNTY
+17-155   PUTNAM COUNTY            18-043   FLOYD COUNTY
+17-157   RANDOLPH COUNTY          18-045   FOUNTAIN COUNTY
+17-159   RICHLAND COUNTY          18-047   FRANKLIN COUNTY
+17-161   ROCK ISLAND COUNTY       18-049   FULTON COUNTY
+17-163   ST. CLAIR COUNTY         18-051   GIBSON COUNTY
+17-165   SALINE COUNTY            18-053   GRANT COUNTY
+17-167   SANGAMON COUNTY          18-055   GREENE COUNTY
+17-169   SCHUYLER COUNTY          18-057   HAMILTON COUNTY
+17-171   SCOTT COUNTY             18-059   HANCOCK COUNTY
+17-173   SHELBY COUNTY            18-061   HARRISON COUNTY
+17-175   STARK COUNTY             18-063   HENDRICKS COUNTY
+17-177   STEPHENSON COUNTY        18-065   HENRY COUNTY
+17-179   TAZEWELL COUNTY          18-067   HOWARD COUNTY
+17-181   UNION COUNTY             18-069   HUNTINGTON COUNTY
+17-183   VERMILION COUNTY         18-071   JACKSON COUNTY
+17-185   WABASH COUNTY            18-073   JASPER COUNTY
+17-187   WARREN COUNTY            18-075   JAY COUNTY
+
+
+
+
+
+
+18-077   JEFFERSON COUNTY         18-173   WARRICK COUNTY
+18-079   JENNINGS COUNTY          18-175   WASHINGTON COUNTY
+18-081   JOHNSON COUNTY           18-177   WAYNE COUNTY
+18-083   KNOX COUNTY              18-179   WELLS COUNTY
+18-085   KOSCIUSKO COUNTY         18-181   WHITE COUNTY
+18-087   LAGRANGE COUNTY          18-183   WHITLEY COUNTY
+18-089   LAKE COUNTY
+18-091   LA PORTE COUNTY          19-000   IOWA
+18-093   LAWRENCE COUNTY          19-001   ADAIR COUNTY
+18-095   MADISON COUNTY           19-003   ADAMS COUNTY
+18-097   MARION COUNTY            19-005   ALLAMAKEE COUNTY
+18-099   MARSHALL COUNTY          19-007   APPANOOSE COUNTY
+18-101   MARTIN COUNTY            19-009   AUDUBON COUNTY
+18-103   MIAMI COUNTY             19-011   BENTON COUNTY
+18-105   MONROE COUNTY            19-013   BLACK HAWK COUNTY
+18-107   MONTGOMERY COUNTY        19-015   BOONE COUNTY
+18-109   MORGAN COUNTY            19-017   BREMER COUNTY
+18-111   NEWTON COUNTY            19-019   BUCHANAN COUNTY
+18-113   NOBLE COUNTY             19-021   BUENA VISTA COUNTY
+18-115   OHIO COUNTY              19-023   BUTLER COUNTY
+18-117   ORANGE COUNTY            19-025   CALHOUN COUNTY
+18-119   OWEN COUNTY              19-027   CARROLL COUNTY
+18-121   PARKE COUNTY             19-029   CASS COUNTY
+18-123   PERRY COUNTY             19-031   CEDAR COUNTY
+18-125   PIKE COUNTY              19-033   CERRO GORDO COUNTY
+18-127   PORTER COUNTY            19-035   CHEROKEE COUNTY
+18-129   POSEY COUNTY             19-037   CHICKASAW COUNTY
+18-131   PULASKI COUNTY           19-039   CLARKE COUNTY
+18-133   PUTNAM COUNTY            19-041   CLAY COUNTY
+18-135   RANDOLPH COUNTY          19-043   CLAYTON COUNTY
+18-137   RIPLEY COUNTY            19-045   CLINTON COUNTY
+18-139   RUSH COUNTY              19-047   CRAWFORD COUNTY
+18-141   ST. JOSEPH COUNTY        19-049   DALLAS COUNTY
+18-143   SCOTT COUNTY             19-051   DAVIS COUNTY
+18-145   SHELBY COUNTY            19-053   DECATUR COUNTY
+18-147   SPENCER COUNTY           19-055   DELAWARE COUNTY
+18-149   STARKE COUNTY            19-057   DES MOINES COUNTY
+18-151   STEUBEN COUNTY           19-059   DICKINSON COUNTY
+18-153   SULLIVAN COUNTY          19-061   DUBUQUE COUNTY
+18-155   SWITZERLAND COUNTY       19-063   EMMET COUNTY
+18-157   TIPPECANOE COUNTY        19-065   FAYETTE COUNTY
+18-159   TIPTON COUNTY            19-067   FLOYD COUNTY
+18-161   UNION COUNTY             19-069   FRANKLIN COUNTY
+18-163   VANDERBURGH COUNTY       19-071   FREMONT COUNTY
+18-165   VERMILLION COUNTY        19-073   GREENE COUNTY
+18-167   VIGO COUNTY              19-075   GRUNDY COUNTY
+18-169   WABASH COUNTY            19-077   GUTHRIE COUNTY
+18-171   WARREN COUNTY            19-079   HAMILTON COUNTY
+
+
+
+
+
+
+19-081   HANCOCK COUNTY           19-177   VAN BUREN COUNTY
+19-083   HARDIN COUNTY            19-179   WAPELLO COUNTY
+19-085   HARRISON COUNTY          19-181   WARREN COUNTY
+19-087   HENRY COUNTY             19-183   WASHINGTON COUNTY
+19-089   HOWARD COUNTY            19-185   WAYNE COUNTY
+19-091   HUMBOLDT COUNTY          19-187   WEBSTER COUNTY
+19-093   IDA COUNTY               19-189   WINNEBAGO COUNTY
+19-095   IOWA COUNTY              19-191   WINNESHIEK COUNTY
+19-097   JACKSON COUNTY           19-193   WOODBURY COUNTY
+19-099   JASPER COUNTY            19-195   WORTH COUNTY
+19-101   JEFFERSON COUNTY         19-197   WRIGHT COUNTY
+19-103   JOHNSON COUNTY
+19-105   JONES COUNTY             20-000   KANSAS
+19-107   KEOKUK COUNTY            20-001   ALLEN COUNTY
+19-109   KOSSUTH COUNTY           20-003   ANDERSON COUNTY
+19-111   LEE COUNTY               20-005   ATCHISON COUNTY
+19-113   LINN COUNTY              20-007   BARBER COUNTY
+19-115   LOUISA COUNTY            20-009   BARTON COUNTY
+19-117   LUCAS COUNTY             20-011   BOURBON COUNTY
+19-119   LYON COUNTY              20-013   BROWN COUNTY
+19-121   MADISON COUNTY           20-015   BUTLER COUNTY
+19-123   MAHASKA COUNTY           20-017   CHASE COUNTY
+19-125   MARION COUNTY            20-019   CHAUTAUQUA COUNTY
+19-127   MARSHALL COUNTY          20-021   CHEROKEE COUNTY
+19-129   MILLS COUNTY             20-023   CHEYENNE COUNTY
+19-131   MITCHELL COUNTY          20-025   CLARK COUNTY
+19-133   MONONA COUNTY            20-027   CLAY COUNTY
+19-135   MONROE COUNTY            20-029   CLOUD COUNTY
+19-137   MONTGOMERY COUNTY        20-031   COFFEY COUNTY
+19-139   MUSCATINE COUNTY         20-033   COMANCHE COUNTY
+19-141   O'BRIEN COUNTY           20-035   COWLEY COUNTY
+19-143   OSCEOLA COUNTY           20-037   CRAWFORD COUNTY
+19-145   PAGE COUNTY              20-039   DECATUR COUNTY
+19-147   PALO ALTO COUNTY         20-041   DICKINSON COUNTY
+19-149   PLYMOUTH COUNTY          20-043   DONIPHAN COUNTY
+19-151   POCAHONTAS COUNTY        20-045   DOUGLAS COUNTY
+19-153   POLK COUNTY              20-047   EDWARDS COUNTY
+19-155   POTTAWATTAMIE COUNTY     20-049   ELK COUNTY
+19-157   POWESHIEK COUNTY         20-051   ELLIS COUNTY
+19-159   RINGGOLD COUNTY          20-053   ELLSWORTH COUNTY
+19-161   SAC COUNTY               20-055   FINNEY COUNTY
+19-163   SCOTT COUNTY             20-057   FORD COUNTY
+19-165   SHELBY COUNTY            20-059   FRANKLIN COUNTY
+19-167   SIOUX COUNTY             20-061   GEARY COUNTY
+19-169   STORY COUNTY             20-063   GOVE COUNTY
+19-171   TAMA COUNTY              20-065   GRAHAM COUNTY
+19-173   TAYLOR COUNTY            20-067   GRANT COUNTY
+19-175   UNION COUNTY             20-069   GRAY COUNTY
+
+
+
+
+
+
+20-071   GREELEY COUNTY           20-167   RUSSELL COUNTY
+20-073   GREENWOOD COUNTY         20-169   SALINE COUNTY
+20-075   HAMILTON COUNTY          20-171   SCOTT COUNTY
+20-077   HARPER COUNTY            20-173   SEDGWICK COUNTY
+20-079   HARVEY COUNTY            20-175   SEWARD COUNTY
+20-081   HASKELL COUNTY           20-177   SHAWNEE COUNTY
+20-083   HODGEMAN COUNTY          20-179   SHERIDAN COUNTY
+20-085   JACKSON COUNTY           20-181   SHERMAN COUNTY
+20-087   JEFFERSON COUNTY         20-183   SMITH COUNTY
+20-089   JEWELL COUNTY            20-185   STAFFORD COUNTY
+20-091   JOHNSON COUNTY           20-187   STANTON COUNTY
+20-093   KEARNY COUNTY            20-189   STEVENS COUNTY
+20-095   KINGMAN COUNTY           20-191   SUMNER COUNTY
+20-097   KIOWA COUNTY             20-193   THOMAS COUNTY
+20-099   LABETTE COUNTY           20-195   TREGO COUNTY
+20-101   LANE COUNTY              20-197   WABAUNSEE COUNTY
+20-103   LEAVENWORTH COUNTY       20-199   WALLACE COUNTY
+20-105   LINCOLN COUNTY           20-201   WASHINGTON COUNTY
+20-107   LINN COUNTY              20-203   WICHITA COUNTY
+20-109   LOGAN COUNTY             20-205   WILSON COUNTY
+20-111   LYON COUNTY              20-207   WOODSON COUNTY
+20-113   MCPHERSON COUNTY         20-209   WYANDOTTE COUNTY
+20-115   MARION COUNTY
+20-117   MARSHALL COUNTY          21-000   KENTUCKY
+20-119   MEADE COUNTY             21-001   ADAIR COUNTY
+20-121   MIAMI COUNTY             21-003   ALLEN COUNTY
+20-123   MITCHELL COUNTY          21-005   ANDERSON COUNTY
+20-125   MONTGOMERY COUNTY        21-007   BALLARD COUNTY
+20-127   MORRIS COUNTY            21-009   BARREN COUNTY
+20-129   MORTON COUNTY            21-011   BATH COUNTY
+20-131   NEMAHA COUNTY            21-013   BELL COUNTY
+20-133   NEOSHO COUNTY            21-015   BOONE COUNTY
+20-135   NESS COUNTY              21-017   BOURBON COUNTY
+20-137   NORTON COUNTY            21-019   BOYD COUNTY
+20-139   OSAGE COUNTY             21-021   BOYLE COUNTY
+20-141   OSBORNE COUNTY           21-023   BRACKEN COUNTY
+20-143   OTTAWA COUNTY            21-025   BREATHITT COUNTY
+20-145   PAWNEE COUNTY            21-027   BRECKINRIDGE COUNTY
+20-147   PHILLIPS COUNTY          21-029   BULLITT COUNTY
+20-149   POTTAWATOMIE COUNTY      21-031   BUTLER COUNTY
+20-151   PRATT COUNTY             21-033   CALDWELL COUNTY
+20-153   RAWLINS COUNTY           21-035   CALLOWAY COUNTY
+20-155   RENO COUNTY              21-037   CAMPBELL COUNTY
+20-157   REPUBLIC COUNTY          21-039   CARLISLE COUNTY
+20-159   RICE COUNTY              21-041   CARROLL COUNTY
+20-161   RILEY COUNTY             21-043   CARTER COUNTY
+20-163   ROOKS COUNTY             21-045   CASEY COUNTY
+20-165   RUSH COUNTY              21-047   CHRISTIAN COUNTY
+
+
+
+
+
+
+21-049   CLARK COUNTY             21-145   MCCRACKEN COUNTY
+21-051   CLAY COUNTY              21-147   MCCREARY COUNTY
+21-053   CLINTON COUNTY           21-149   MCLEAN COUNTY
+21-055   CRITTENDEN COUNTY        21-151   MADISON COUNTY
+21-057   CUMBERLAND COUNTY        21-153   MAGOFFIN COUNTY
+21-059   DAVIESS COUNTY           21-155   MARION COUNTY
+21-061   EDMONSON COUNTY          21-157   MARSHALL COUNTY
+21-063   ELLIOTT COUNTY           21-159   MARTIN COUNTY
+21-065   ESTILL COUNTY            21-161   MASON COUNTY
+21-067   FAYETTE COUNTY           21-163   MEADE COUNTY
+21-069   FLEMING COUNTY           21-165   MENIFEE COUNTY
+21-071   FLOYD COUNTY             21-167   MERCER COUNTY
+21-073   FRANKLIN COUNTY          21-169   METCALFE COUNTY
+21-075   FULTON COUNTY            21-171   MONROE COUNTY
+21-077   GALLATIN COUNTY          21-173   MONTGOMERY COUNTY
+21-079   GARRARD COUNTY           21-175   MORGAN COUNTY
+21-081   GRANT COUNTY             21-177   MUHLENBERG COUNTY
+21-083   GRAVES COUNTY            21-179   NELSON COUNTY
+21-085   GRAYSON COUNTY           21-181   NICHOLAS COUNTY
+21-087   GREEN COUNTY             21-183   OHIO COUNTY
+21-089   GREENUP COUNTY           21-185   OLDHAM COUNTY
+21-091   HANCOCK COUNTY           21-187   OWEN COUNTY
+21-093   HARDIN COUNTY            21-189   OWSLEY COUNTY
+21-095   HARLAN COUNTY            21-191   PENDLETON COUNTY
+21-097   HARRISON COUNTY          21-193   PERRY COUNTY
+21-099   HART COUNTY              21-195   PIKE COUNTY
+21-101   HENDERSON COUNTY         21-197   POWELL COUNTY
+21-103   HENRY COUNTY             21-199   PULASKI COUNTY
+21-105   HICKMAN COUNTY           21-201   ROBERTSON COUNTY
+21-107   HOPKINS COUNTY           21-203   ROCKCASTLE COUNTY
+21-109   JACKSON COUNTY           21-205   ROWAN COUNTY
+21-111   JEFFERSON COUNTY         21-207   RUSSELL COUNTY
+21-113   JESSAMINE COUNTY         21-209   SCOTT COUNTY
+21-115   JOHNSON COUNTY           21-211   SHELBY COUNTY
+21-117   KENTON COUNTY            21-213   SIMPSON COUNTY
+21-119   KNOTT COUNTY             21-215   SPENCER COUNTY
+21-121   KNOX COUNTY              21-217   TAYLOR COUNTY
+21-123   LARUE COUNTY             21-219   TODD COUNTY
+21-125   LAUREL COUNTY            21-221   TRIGG COUNTY
+21-127   LAWRENCE COUNTY          21-223   TRIMBLE COUNTY
+21-129   LEE COUNTY               21-225   UNION COUNTY
+21-131   LESLIE COUNTY            21-227   WARREN COUNTY
+21-133   LETCHER COUNTY           21-229   WASHINGTON COUNTY
+21-135   LEWIS COUNTY             21-231   WAYNE COUNTY
+21-137   LINCOLN COUNTY           21-233   WEBSTER COUNTY
+21-139   LIVINGSTON COUNTY        21-235   WHITLEY COUNTY
+21-141   LOGAN COUNTY             21-237   WOLFE COUNTY
+21-143   LYON COUNTY              21-239   WOODFORD COUNTY
+
+
+
+
+
+                                  22-093   ST. JAMES PARISH
+22-000   LOUISIANA                22-095   ST. JOHN THE BAPTIST
+22-001   ACADIA PARISH            22-097   ST. LANDRY PARISH
+22-003   ALLEN PARISH             22-099   ST. MARTIN PARISH
+22-005   ASCENSION PARISH         22-101   ST. MARY PARISH
+22-007   ASSUMPTION PARISH        22-103   ST. TAMMANY PARISH
+22-009   AVOYELLES PARISH         22-105   TANGIPAHOA PARISH
+22-011   BEAUREGARD PARISH        22-107   TENSAS PARISH
+22-013   BIENVILLE PARISH         22-109   TERREBONNE PARISH
+22-015   BOSSIER PARISH           22-111   UNION PARISH
+22-017   CADDO PARISH             22-113   VERMILION PARISH
+22-019   CALCASIEU PARISH         22-115   VERNON PARISH
+22-021   CALDWELL PARISH          22-117   WASHINGTON PARISH
+22-023   CAMERON PARISH           22-119   WEBSTER PARISH
+22-025   CATAHOULA PARISH         22-121   WEST BATON ROUGE PAR
+22-027   CLAIBORNE PARISH         22-123   WEST CARROLL PARISH
+22-029   CONCORDIA PARISH         22-125   WEST FELICIANA PARIS
+22-031   DE SOTO PARISH           22-127   WINN PARISH
+22-033   EAST BATON ROUGE PAR
+22-035   EAST CARROLL PARISH      23-000   MAINE
+22-037   EAST FELICIANA PARIS     23-001   ANDROSCOGGIN COUNTY
+22-039   EVANGELINE PARISH        23-003   AROOSTOOK COUNTY
+22-041   FRANKLIN PARISH          23-005   CUMBERLAND COUNTY
+22-043   GRANT PARISH             23-007   FRANKLIN COUNTY
+22-045   IBERIA PARISH            23-009   HANCOCK COUNTY
+22-047   IBERVILLE PARISH         23-011   KENNEBEC COUNTY
+22-049   JACKSON PARISH           23-013   KNOX COUNTY
+22-051   JEFFERSON PARISH         23-015   LINCOLN COUNTY
+22-053   JEFFERSON DAVIS PARI     23-017   OXFORD COUNTY
+22-055   LAFAYETTE PARISH         23-019   PENOBSCOT COUNTY
+22-057   LAFOURCHE PARISH         23-021   PISCATAQUIS COUNTY
+22-059   LA SALLE PARISH          23-023   SAGADAHOC COUNTY
+22-061   LINCOLN PARISH           23-025   SOMERSET COUNTY
+22-063   LIVINGSTON PARISH        23-027   WALDO COUNTY
+22-065   MADISON PARISH           23-029   WASHINGTON COUNTY
+22-067   MOREHOUSE PARISH         23-031   YORK COUNTY
+22-069   NATCHITOCHES PARISH
+22-071   ORLEANS PARISH           24-000   MARYLAND
+22-073   OUACHITA PARISH          24-001   ALLEGANY COUNTY
+22-075   PLAQUEMINES PARISH       24-003   ANNE ARUNDEL COUNTY
+22-077   POINTE COUPEE PARISH     24-005   BALTIMORE COUNTY
+22-079   RAPIDES PARISH           24-009   CALVERT COUNTY
+22-081   RED RIVER PARISH         24-011   CAROLINE COUNTY
+22-083   RICHLAND PARISH          24-013   CARROLL COUNTY
+22-085   SABINE PARISH            24-015   CECIL COUNTY
+22-087   ST. BERNARD PARISH       24-017   CHARLES COUNTY
+22-089   ST. CHARLES PARISH       24-019   DORCHESTER COUNTY
+22-091   ST. HELENA PARISH        24-021   FREDERICK COUNTY
+
+
+
+
+
+
+24-023   GARRETT COUNTY           26-033   CHIPPEWA COUNTY
+24-025   HARFORD COUNTY           26-035   CLARE COUNTY
+24-027   HOWARD COUNTY            26-037   CLINTON COUNTY
+24-029   KENT COUNTY              26-039   CRAWFORD COUNTY
+24-031   MONTGOMERY COUNTY        26-041   DELTA COUNTY
+24-033   PRINCE GEORGE'S COUN     26-043   DICKINSON COUNTY
+24-035   QUEEN ANNE'S COUNTY      26-045   EATON COUNTY
+24-037   ST. MARY'S COUNTY        26-047   EMMET COUNTY
+24-039   SOMERSET COUNTY          26-049   GENESEE COUNTY
+24-041   TALBOT COUNTY            26-051   GLADWIN COUNTY
+24-043   WASHINGTON COUNTY        26-053   GOGEBIC COUNTY
+24-045   WICOMICO COUNTY          26-055   GRAND TRAVERSE COUNT
+24-047   WORCESTER COUNTY         26-057   GRATIOT COUNTY
+24-510   BALTIMORE                26-059   HILLSDALE COUNTY
+                                  26-061   HOUGHTON COUNTY
+25-000   MASSACHUSETTS            26-063   HURON COUNTY
+25-001   BARNSTABLE COUNTY        26-065   INGHAM COUNTY
+25-003   BERKSHIRE COUNTY         26-067   IONIA COUNTY
+25-005   BRISTOL COUNTY           26-069   IOSCO COUNTY
+25-007   DUKES COUNTY             26-071   IRON COUNTY
+25-009   ESSEX COUNTY             26-073   ISABELLA COUNTY
+25-011   FRANKLIN COUNTY          26-075   JACKSON COUNTY
+25-013   HAMPDEN COUNTY           26-077   KALAMAZOO COUNTY
+25-015   HAMPSHIRE COUNTY         26-079   KALKASKA COUNTY
+25-017   MIDDLESEX COUNTY         26-081   KENT COUNTY
+25-019   NANTUCKET COUNTY         26-083   KEWEENAW COUNTY
+25-021   NORFOLK COUNTY           26-085   LAKE COUNTY
+25-023   PLYMOUTH COUNTY          26-087   LAPEER COUNTY
+25-025   SUFFOLK COUNTY           26-089   LEELANAU COUNTY
+25-027   WORCESTER COUNTY         26-091   LENAWEE COUNTY
+                                  26-093   LIVINGSTON COUNTY
+26-000   MICHIGAN                 26-095   LUCE COUNTY
+26-001   ALCONA COUNTY            26-097   MACKINAC COUNTY
+26-003   ALGER COUNTY             26-099   MACOMB COUNTY
+26-005   ALLEGAN COUNTY           26-101   MANISTEE COUNTY
+26-007   ALPENA COUNTY            26-103   MARQUETTE COUNTY
+26-009   ANTRIM COUNTY            26-105   MASON COUNTY
+26-011   ARENAC COUNTY            26-107   MECOSTA COUNTY
+26-013   BARAGA COUNTY            26-109   MENOMINEE COUNTY
+26-015   BARRY COUNTY             26-111   MIDLAND COUNTY
+26-017   BAY COUNTY               26-113   MISSAUKEE COUNTY
+26-019   BENZIE COUNTY            26-115   MONROE COUNTY
+26-021   BERRIEN COUNTY           26-117   MONTCALM COUNTY
+26-023   BRANCH COUNTY            26-119   MONTMORENCY COUNTY
+26-025   CALHOUN COUNTY           26-121   MUSKEGON COUNTY
+26-027   CASS COUNTY              26-123   NEWAYGO COUNTY
+26-029   CHARLEVOIX COUNTY        26-125   OAKLAND COUNTY
+26-031   CHEBOYGAN COUNTY         26-127   OCEANA COUNTY
+
+
+
+
+
+
+26-129   OGEMAW COUNTY            27-055   HOUSTON COUNTY
+26-131   ONTONAGON COUNTY         27-057   HUBBARD COUNTY
+26-133   OSCEOLA COUNTY           27-059   ISANTI COUNTY
+26-135   OSCODA COUNTY            27-061   ITASCA COUNTY
+26-137   OTSEGO COUNTY            27-063   JACKSON COUNTY
+26-139   OTTAWA COUNTY            27-065   KANABEC COUNTY
+26-141   PRESQUE ISLE COUNTY      27-067   KANDIYOHI COUNTY
+26-143   ROSCOMMON COUNTY         27-069   KITTSON COUNTY
+26-145   SAGINAW COUNTY           27-071   KOOCHICHING COUNTY
+26-147   ST. CLAIR COUNTY         27-073   LAC QUI PARLE COUNTY
+26-149   ST. JOSEPH COUNTY        27-075   LAKE COUNTY
+26-151   SANILAC COUNTY           27-077   LAKE OF THE WOODS CO
+26-153   SCHOOLCRAFT COUNTY       27-079   LE SUEUR COUNTY
+26-155   SHIAWASSEE COUNTY        27-081   LINCOLN COUNTY
+26-157   TUSCOLA COUNTY           27-083   LYON COUNTY
+26-159   VAN BUREN COUNTY         27-085   MCLEOD COUNTY
+26-161   WASHTENAW COUNTY         27-087   MAHNOMEN COUNTY
+26-163   WAYNE COUNTY             27-089   MARSHALL COUNTY
+26-165   WEXFORD COUNTY           27-091   MARTIN COUNTY
+                                  27-093   MEEKER COUNTY
+27-000   MINNESOTA                27-095   MILLE LACS COUNTY
+27-001   AITKIN COUNTY            27-097   MORRISON COUNTY
+27-003   ANOKA COUNTY             27-099   MOWER COUNTY
+27-005   BECKER COUNTY            27-101   MURRAY COUNTY
+27-007   BELTRAMI COUNTY          27-103   NICOLLET COUNTY
+27-009   BENTON COUNTY            27-105   NOBLES COUNTY
+27-011   BIG STONE COUNTY         27-107   NORMAN COUNTY
+27-013   BLUE EARTH COUNTY        27-109   OLMSTED COUNTY
+27-015   BROWN COUNTY             27-111   OTTER TAIL COUNTY
+27-017   CARLTON COUNTY           27-113   PENNINGTON COUNTY
+27-019   CARVER COUNTY            27-115   PINE COUNTY
+27-021   CASS COUNTY              27-117   PIPESTONE COUNTY
+27-023   CHIPPEWA COUNTY          27-119   POLK COUNTY
+27-025   CHISAGO COUNTY           27-121   POPE COUNTY
+27-027   CLAY COUNTY              27-123   RAMSEY COUNTY
+27-029   CLEARWATER COUNTY        27-125   RED LAKE COUNTY
+27-031   COOK COUNTY              27-127   REDWOOD COUNTY
+27-033   COTTONWOOD COUNTY        27-129   RENVILLE COUNTY
+27-035   CROW WING COUNTY         27-131   RICE COUNTY
+27-037   DAKOTA COUNTY            27-133   ROCK COUNTY
+27-039   DODGE COUNTY             27-135   ROSEAU COUNTY
+27-041   DOUGLAS COUNTY           27-137   ST. LOUIS COUNTY
+27-043   FARIBAULT COUNTY         27-139   SCOTT COUNTY
+27-045   FILLMORE COUNTY          27-141   SHERBURNE COUNTY
+27-047   FREEBORN COUNTY          27-143   SIBLEY COUNTY
+27-049   GOODHUE COUNTY           27-145   STEARNS COUNTY
+27-051   GRANT COUNTY             27-147   STEELE COUNTY
+27-053   HENNEPIN COUNTY          27-149   STEVENS COUNTY
+
+
+
+
+
+
+27-151   SWIFT COUNTY             28-069   KEMPER COUNTY
+27-153   TODD COUNTY              28-071   LAFAYETTE COUNTY
+27-155   TRAVERSE COUNTY          28-073   LAMAR COUNTY
+27-157   WABASHA COUNTY           28-075   LAUDERDALE COUNTY
+27-159   WADENA COUNTY            28-077   LAWRENCE COUNTY
+27-161   WASECA COUNTY            28-079   LEAKE COUNTY
+27-163   WASHINGTON COUNTY        28-081   LEE COUNTY
+27-165   WATONWAN COUNTY          28-083   LEFLORE COUNTY
+27-167   WILKIN COUNTY            28-085   LINCOLN COUNTY
+27-169   WINONA COUNTY            28-087   LOWNDES COUNTY
+27-171   WRIGHT COUNTY            28-089   MADISON COUNTY
+27-173   YELLOW MEDICINE COUN     28-091   MARION COUNTY
+                                  28-093   MARSHALL COUNTY
+28-000   MISSISSIPPI              28-095   MONROE COUNTY
+28-001   ADAMS COUNTY             28-097   MONTGOMERY COUNTY
+28-003   ALCORN COUNTY            28-099   NESHOBA COUNTY
+28-005   AMITE COUNTY             28-101   NEWTON COUNTY
+28-007   ATTALA COUNTY            28-103   NOXUBEE COUNTY
+28-009   BENTON COUNTY            28-105   OKTIBBEHA COUNTY
+28-011   BOLIVAR COUNTY           28-107   PANOLA COUNTY
+28-013   CALHOUN COUNTY           28-109   PEARL RIVER COUNTY
+28-015   CARROLL COUNTY           28-111   PERRY COUNTY
+28-017   CHICKASAW COUNTY         28-113   PIKE COUNTY
+28-019   CHOCTAW COUNTY           28-115   PONTOTOC COUNTY
+28-021   CLAIBORNE COUNTY         28-117   PRENTISS COUNTY
+28-023   CLARKE COUNTY            28-119   QUITMAN COUNTY
+28-025   CLAY COUNTY              28-121   RANKIN COUNTY
+28-027   COAHOMA COUNTY           28-123   SCOTT COUNTY
+28-029   COPIAH COUNTY            28-125   SHARKEY COUNTY
+28-031   COVINGTON COUNTY         28-127   SIMPSON COUNTY
+28-033   DE SOTO COUNTY           28-129   SMITH COUNTY
+28-035   FORREST COUNTY           28-131   STONE COUNTY
+28-037   FRANKLIN COUNTY          28-133   SUNFLOWER COUNTY
+28-039   GEORGE COUNTY            28-135   TALLAHATCHIE COUNTY
+28-041   GREENE COUNTY            28-137   TATE COUNTY
+28-043   GRENADA COUNTY           28-139   TIPPAH COUNTY
+28-045   HANCOCK COUNTY           28-141   TISHOMINGO COUNTY
+28-047   HARRISON COUNTY          28-143   TUNICA COUNTY
+28-049   HINDS COUNTY             28-145   UNION COUNTY
+28-051   HOLMES COUNTY            28-147   WALTHALL COUNTY
+28-053   HUMPHREYS COUNTY         28-149   WARREN COUNTY
+28-055   ISSAQUENA COUNTY         28-151   WASHINGTON COUNTY
+28-057   ITAWAMBA COUNTY          28-153   WAYNE COUNTY
+28-059   JACKSON COUNTY           28-155   WEBSTER COUNTY
+28-061   JASPER COUNTY            28-157   WILKINSON COUNTY
+28-063   JEFFERSON COUNTY         28-159   WINSTON COUNTY
+28-065   JEFFERSON DAVIS COUN     28-161   YALOBUSHA COUNTY
+28-067   JONES COUNTY             28-163   YAZOO COUNTY
+
+
+
+
+
+                                  29-093   IRON COUNTY
+29-000   MISSOURI                 29-095   JACKSON COUNTY
+29-001   ADAIR COUNTY             29-097   JASPER COUNTY
+29-003   ANDREW COUNTY            29-099   JEFFERSON COUNTY
+29-005   ATCHISON COUNTY          29-101   JOHNSON COUNTY
+29-007   AUDRAIN COUNTY           29-103   KNOX COUNTY
+29-009   BARRY COUNTY             29-105   LACLEDE COUNTY
+29-011   BARTON COUNTY            29-107   LAFAYETTE COUNTY
+29-013   BATES COUNTY             29-109   LAWRENCE COUNTY
+29-015   BENTON COUNTY            29-111   LEWIS COUNTY
+29-017   BOLLINGER COUNTY         29-113   LINCOLN COUNTY
+29-019   BOONE COUNTY             29-115   LINN COUNTY
+29-021   BUCHANAN COUNTY          29-117   LIVINGSTON COUNTY
+29-023   BUTLER COUNTY            29-119   MCDONALD COUNTY
+29-025   CALDWELL COUNTY          29-121   MACON COUNTY
+29-027   CALLAWAY COUNTY          29-123   MADISON COUNTY
+29-029   CAMDEN COUNTY            29-125   MARIES COUNTY
+29-031   CAPE GIRARDEAU COUNT     29-127   MARION COUNTY
+29-033   CARROLL COUNTY           29-129   MERCER COUNTY
+29-035   CARTER COUNTY            29-131   MILLER COUNTY
+29-037   CASS COUNTY              29-133   MISSISSIPPI COUNTY
+29-039   CEDAR COUNTY             29-135   MONITEAU COUNTY
+29-041   CHARITON COUNTY          29-137   MONROE COUNTY
+29-043   CHRISTIAN COUNTY         29-139   MONTGOMERY COUNTY
+29-045   CLARK COUNTY             29-141   MORGAN COUNTY
+29-047   CLAY COUNTY              29-143   NEW MADRID COUNTY
+29-049   CLINTON COUNTY           29-145   NEWTON COUNTY
+29-051   COLE COUNTY              29-147   NODAWAY COUNTY
+29-053   COOPER COUNTY            29-149   OREGON COUNTY
+29-055   CRAWFORD COUNTY          29-151   OSAGE COUNTY
+29-057   DADE COUNTY              29-153   OZARK COUNTY
+29-059   DALLAS COUNTY            29-155   PEMISCOT COUNTY
+29-061   DAVIESS COUNTY           29-157   PERRY COUNTY
+29-063   DE KALB COUNTY           29-159   PETTIS COUNTY
+29-065   DENT COUNTY              29-161   PHELPS COUNTY
+29-067   DOUGLAS COUNTY           29-163   PIKE COUNTY
+29-069   DUNKLIN COUNTY           29-165   PLATTE COUNTY
+29-071   FRANKLIN COUNTY          29-167   POLK COUNTY
+29-073   GASCONADE COUNTY         29-169   PULASKI COUNTY
+29-075   GENTRY COUNTY            29-171   PUTNAM COUNTY
+29-077   GREENE COUNTY            29-173   RALLS COUNTY
+29-079   GRUNDY COUNTY            29-175   RANDOLPH COUNTY
+29-081   HARRISON COUNTY          29-177   RAY COUNTY
+29-083   HENRY COUNTY             29-179   REYNOLDS COUNTY
+29-085   HICKORY COUNTY           29-181   RIPLEY COUNTY
+29-087   HOLT COUNTY              29-183   ST. CHARLES COUNTY
+29-089   HOWARD COUNTY            29-185   ST. CLAIR COUNTY
+29-091   HOWELL COUNTY            29-186   STE. GENEVIEVE COUNT
+
+
+
+
+
+
+29-187   ST. FRANCOIS COUNTY      30-051   LIBERTY COUNTY
+29-189   ST. LOUIS COUNTY         30-053   LINCOLN COUNTY
+29-195   SALINE COUNTY            30-055   MCCONE COUNTY
+29-197   SCHUYLER COUNTY          30-057   MADISON COUNTY
+29-199   SCOTLAND COUNTY          30-059   MEAGHER COUNTY
+29-201   SCOTT COUNTY             30-061   MINERAL COUNTY
+29-203   SHANNON COUNTY           30-063   MISSOULA COUNTY
+29-205   SHELBY COUNTY            30-065   MUSSELSHELL COUNTY
+29-207   STODDARD COUNTY          30-067   PARK COUNTY
+29-209   STONE COUNTY             30-069   PETROLEUM COUNTY
+29-211   SULLIVAN COUNTY          30-071   PHILLIPS COUNTY
+29-213   TANEY COUNTY             30-073   PONDERA COUNTY
+29-215   TEXAS COUNTY             30-075   POWDER RIVER COUNTY
+29-217   VERNON COUNTY            30-077   POWELL COUNTY
+29-219   WARREN COUNTY            30-079   PRAIRIE COUNTY
+29-221   WASHINGTON COUNTY        30-081   RAVALLI COUNTY
+29-223   WAYNE COUNTY             30-083   RICHLAND COUNTY
+29-225   WEBSTER COUNTY           30-085   ROOSEVELT COUNTY
+29-227   WORTH COUNTY             30-087   ROSEBUD COUNTY
+29-229   WRIGHT COUNTY            30-089   SANDERS COUNTY
+29-510   ST. LOUIS                30-091   SHERIDAN COUNTY
+                                  30-093   SILVER BOW COUNTY
+30-000   MONTANA                  30-095   STILLWATER COUNTY
+30-001   BEAVERHEAD COUNTY        30-097   SWEET GRASS COUNTY
+30-003   BIG HORN COUNTY          30-099   TETON COUNTY
+30-005   BLAINE COUNTY            30-101   TOOLE COUNTY
+30-007   BROADWATER COUNTY        30-103   TREASURE COUNTY
+30-009   CARBON COUNTY            30-105   VALLEY COUNTY
+30-011   CARTER COUNTY            30-107   WHEATLAND COUNTY
+30-013   CASCADE COUNTY           30-109   WIBAUX COUNTY
+30-015   CHOUTEAU COUNTY          30-111   YELLOWSTONE COUNTY
+30-017   CUSTER COUNTY
+30-019   DANIELS COUNTY
+30-021   DAWSON COUNTY            31-000   NEBRASKA
+30-023   DEER LODGE COUNTY        31-001   ADAMS COUNTY
+30-025   FALLON COUNTY            31-003   ANTELOPE COUNTY
+30-027   FERGUS COUNTY            31-005   ARTHUR COUNTY
+30-029   FLATHEAD COUNTY          31-007   BANNER COUNTY
+30-031   GALLATIN COUNTY          31-009   BLAINE COUNTY
+30-033   GARFIELD COUNTY          31-011   BOONE COUNTY
+30-035   GLACIER COUNTY           31-013   BOX BUTTE COUNTY
+30-037   GOLDEN VALLEY COUNTY     31-015   BOYD COUNTY
+30-039   GRANITE COUNTY           31-017   BROWN COUNTY
+30-041   HILL COUNTY              31-019   BUFFALO COUNTY
+30-043   JEFFERSON COUNTY         31-021   BURT COUNTY
+30-045   JUDITH BASIN COUNTY      31-023   BUTLER COUNTY
+30-047   LAKE COUNTY              31-025   CASS COUNTY
+30-049   LEWIS AND CLARK COUN     31-027   CEDAR COUNTY
+
+
+
+
+
+
+31-029   CHASE COUNTY             31-125   NANCE COUNTY
+31-031   CHERRY COUNTY            31-127   NEMAHA COUNTY
+31-033   CHEYENNE COUNTY          31-129   NUCKOLLS COUNTY
+31-035   CLAY COUNTY              31-131   OTOE COUNTY
+31-037   COLFAX COUNTY            31-133   PAWNEE COUNTY
+31-039   CUMING COUNTY            31-135   PERKINS COUNTY
+31-041   CUSTER COUNTY            31-137   PHELPS COUNTY
+31-043   DAKOTA COUNTY            31-139   PIERCE COUNTY
+31-045   DAWES COUNTY             31-141   PLATTE COUNTY
+31-047   DAWSON COUNTY            31-143   POLK COUNTY
+31-049   DEUEL COUNTY             31-145   RED WILLOW COUNTY
+31-051   DIXON COUNTY             31-147   RICHARDSON COUNTY
+31-053   DODGE COUNTY             31-149   ROCK COUNTY
+31-055   DOUGLAS COUNTY           31-151   SALINE COUNTY
+31-057   DUNDY COUNTY             31-153   SARPY COUNTY
+31-059   FILLMORE COUNTY          31-155   SAUNDERS COUNTY
+31-061   FRANKLIN COUNTY          31-157   SCOTTS BLUFF COUNTY
+31-063   FRONTIER COUNTY          31-159   SEWARD COUNTY
+31-065   FURNAS COUNTY            31-161   SHERIDAN COUNTY
+31-067   GAGE COUNTY              31-163   SHERMAN COUNTY
+31-069   GARDEN COUNTY            31-165   SIOUX COUNTY
+31-071   GARFIELD COUNTY          31-167   STANTON COUNTY
+31-073   GOSPER COUNTY            31-169   THAYER COUNTY
+31-075   GRANT COUNTY             31-171   THOMAS COUNTY
+31-077   GREELEY COUNTY           31-173   THURSTON COUNTY
+31-079   HALL COUNTY              31-175   VALLEY COUNTY
+31-081   HAMILTON COUNTY          31-177   WASHINGTON COUNTY
+31-083   HARLAN COUNTY            31-179   WAYNE COUNTY
+31-085   HAYES COUNTY             31-181   WEBSTER COUNTY
+31-087   HITCHCOCK COUNTY         31-183   WHEELER COUNTY
+31-089   HOLT COUNTY              31-185   YORK COUNTY
+31-091   HOOKER COUNTY
+31-093   HOWARD COUNTY            32-000   NEVADA
+31-095   JEFFERSON COUNTY         32-001   CHURCHILL COUNTY
+31-097   JOHNSON COUNTY           32-003   CLARK COUNTY
+31-099   KEARNEY COUNTY           32-005   DOUGLAS COUNTY
+31-101   KEITH COUNTY             32-007   ELKO COUNTY
+31-103   KEYA PAHA COUNTY         32-009   ESMERALDA COUNTY
+31-105   KIMBALL COUNTY           32-011   EUREKA COUNTY
+31-107   KNOX COUNTY              32-013   HUMBOLDT COUNTY
+31-109   LANCASTER COUNTY         32-015   LANDER COUNTY
+31-111   LINCOLN COUNTY           32-017   LINCOLN COUNTY
+31-113   LOGAN COUNTY             32-019   LYON COUNTY
+31-115   LOUP COUNTY              32-021   MINERAL COUNTY
+31-117   MCPHERSON COUNTY         32-023   NYE COUNTY
+31-119   MADISON COUNTY           32-027   PERSHING COUNTY
+31-121   MERRICK COUNTY           32-029   STOREY COUNTY
+31-123   MORRILL COUNTY           32-031   WASHOE COUNTY
+
+
+
+
+
+
+32-033   WHITE PINE COUNTY        35-017   GRANT COUNTY
+32-510   CARSON CITY              35-019   GUADALUPE COUNTY
+                                  35-021   HARDING COUNTY
+33-000   NEW HAMPSHIRE            35-023   HIDALGO COUNTY
+33-001   BELKNAP COUNTY           35-025   LEA COUNTY
+33-003   CARROLL COUNTY           35-027   LINCOLN COUNTY
+33-005   CHESHIRE COUNTY          35-028   LOS ALAMOS COUNTY
+33-007   COOS COUNTY              35-029   LUNA COUNTY
+33-009   GRAFTON COUNTY           35-031   MCKINLEY COUNTY
+33-011   HILLSBOROUGH COUNTY      35-033   MORA COUNTY
+33-013   MERRIMACK COUNTY         35-035   OTERO COUNTY
+33-015   ROCKINGHAM COUNTY        35-037   QUAY COUNTY
+33-017   STRAFFORD COUNTY         35-039   RIO ARRIBA COUNTY
+33-019   SULLIVAN COUNTY          35-041   ROOSEVELT COUNTY
+                                  35-043   SANDOVAL COUNTY
+34-000   NEW JERSEY               35-045   SAN JUAN COUNTY
+34-001   ATLANTIC COUNTY          35-047   SAN MIGUEL COUNTY
+34-003   BERGEN COUNTY            35-049   SANTA FE COUNTY
+34-005   BURLINGTON COUNTY        35-051   SIERRA COUNTY
+34-007   CAMDEN COUNTY            35-053   SOCORRO COUNTY
+34-009   CAPE MAY COUNTY          35-055   TAOS COUNTY
+34-011   CUMBERLAND COUNTY        35-057   TORRANCE COUNTY
+34-013   ESSEX COUNTY             35-059   UNION COUNTY
+34-015   GLOUCESTER COUNTY        35-061   VALENCIA COUNTY
+34-017   HUDSON COUNTY
+34-019   HUNTERDON COUNTY         36-000   NEW YORK
+34-021   MERCER COUNTY            36-001   ALBANY COUNTY
+34-023   MIDDLESEX COUNTY         36-003   ALLEGANY COUNTY
+34-025   MONMOUTH COUNTY          36-005   BRONX COUNTY
+34-027   MORRIS COUNTY            36-007   BROOME COUNTY
+34-029   OCEAN COUNTY             36-009   CATTARAUGUS COUNTY
+34-031   PASSAIC COUNTY           36-011   CAYUGA COUNTY
+34-033   SALEM COUNTY             36-013   CHAUTAUQUA COUNTY
+34-035   SOMERSET COUNTY          36-015   CHEMUNG COUNTY
+34-037   SUSSEX COUNTY            36-017   CHENANGO COUNTY
+34-039   UNION COUNTY             36-019   CLINTON COUNTY
+34-041   WARREN COUNTY            36-021   COLUMBIA COUNTY
+                                  36-023   CORTLAND COUNTY
+35-000   NEW MEXICO               36-025   DELAWARE COUNTY
+35-001   BERNALILLO COUNTY        36-027   DUTCHESS COUNTY
+35-003   CATRON COUNTY            36-029   ERIE COUNTY
+35-005   CHAVES COUNTY            36-031   ESSEX COUNTY
+35-006   CIBOLA COUNTY            36-033   FRANKLIN COUNTY
+35-007   COLFAX COUNTY            36-035   FULTON COUNTY
+35-009   CURRY COUNTY             36-037   GENESEE COUNTY
+35-011   DE BACA COUNTY           36-039   GREENE COUNTY
+35-013   DONA ANA COUNTY          36-041   HAMILTON COUNTY
+35-015   EDDY COUNTY              36-043   HERKIMER COUNTY
+
+
+
+
+
+
+36-045   JEFFERSON COUNTY         37-013   BEAUFORT COUNTY
+36-047   KINGS COUNTY             37-015   BERTIE COUNTY
+36-049   LEWIS COUNTY             37-017   BLADEN COUNTY
+36-051   LIVINGSTON COUNTY        37-019   BRUNSWICK COUNTY
+36-053   MADISON COUNTY           37-021   BUNCOMBE COUNTY
+36-055   MONROE COUNTY            37-023   BURKE COUNTY
+36-057   MONTGOMERY COUNTY        37-025   CABARRUS COUNTY
+36-059   NASSAU COUNTY            37-027   CALDWELL COUNTY
+36-061   NEW YORK COUNTY          37-029   CAMDEN COUNTY
+36-063   NIAGARA COUNTY           37-031   CARTERET COUNTY
+36-065   ONEIDA COUNTY            37-033   CASWELL COUNTY
+36-067   ONONDAGA COUNTY          37-035   CATAWBA COUNTY
+36-069   ONTARIO COUNTY           37-037   CHATHAM COUNTY
+36-071   ORANGE COUNTY            37-039   CHEROKEE COUNTY
+36-073   ORLEANS COUNTY           37-041   CHOWAN COUNTY
+36-075   OSWEGO COUNTY            37-043   CLAY COUNTY
+36-077   OTSEGO COUNTY            37-045   CLEVELAND COUNTY
+36-079   PUTNAM COUNTY            37-047   COLUMBUS COUNTY
+36-081   QUEENS COUNTY            37-049   CRAVEN COUNTY
+36-083   RENSSELAER COUNTY        37-051   CUMBERLAND COUNTY
+36-085   RICHMOND COUNTY          37-053   CURRITUCK COUNTY
+36-087   ROCKLAND COUNTY          37-055   DARE COUNTY
+36-089   ST. LAWRENCE COUNTY      37-057   DAVIDSON COUNTY
+36-091   SARATOGA COUNTY          37-059   DAVIE COUNTY
+36-093   SCHENECTADY COUNTY       37-061   DUPLIN COUNTY
+36-095   SCHOHARIE COUNTY         37-063   DURHAM COUNTY
+36-097   SCHUYLER COUNTY          37-065   EDGECOMBE COUNTY
+36-099   SENECA COUNTY            37-067   FORSYTH COUNTY
+36-101   STEUBEN COUNTY           37-069   FRANKLIN COUNTY
+36-103   SUFFOLK COUNTY           37-071   GASTON COUNTY
+36-105   SULLIVAN COUNTY          37-073   GATES COUNTY
+36-107   TIOGA COUNTY             37-075   GRAHAM COUNTY
+36-109   TOMPKINS COUNTY          37-077   GRANVILLE COUNTY
+36-111   ULSTER COUNTY            37-079   GREENE COUNTY
+36-113   WARREN COUNTY            37-081   GUILFORD COUNTY
+36-115   WASHINGTON COUNTY        37-083   HALIFAX COUNTY
+36-117   WAYNE COUNTY             37-085   HARNETT COUNTY
+36-119   WESTCHESTER COUNTY       37-087   HAYWOOD COUNTY
+36-121   WYOMING COUNTY           37-089   HENDERSON COUNTY
+36-123   YATES COUNTY             37-091   HERTFORD COUNTY
+                                  37-093   HOKE COUNTY
+37-000   NORTH CAROLINA           37-095   HYDE COUNTY
+37-001   ALAMANCE COUNTY          37-097   IREDELL COUNTY
+37-003   ALEXANDER COUNTY         37-099   JACKSON COUNTY
+37-005   ALLEGHANY COUNTY         37-101   JOHNSTON COUNTY
+37-007   ANSON COUNTY             37-103   JONES COUNTY
+37-009   ASHE COUNTY              37-105   LEE COUNTY
+37-011   AVERY COUNTY             37-107   LENOIR COUNTY
+
+
+
+
+
+
+37-109   LINCOLN COUNTY           38-001   ADAMS COUNTY
+37-111   MCDOWELL COUNTY          38-003   BARNES COUNTY
+37-113   MACON COUNTY             38-005   BENSON COUNTY
+37-115   MADISON COUNTY           38-007   BILLINGS COUNTY
+37-117   MARTIN COUNTY            38-009   BOTTINEAU COUNTY
+37-119   MECKLENBURG COUNTY       38-011   BOWMAN COUNTY
+37-121   MITCHELL COUNTY          38-013   BURKE COUNTY
+37-123   MONTGOMERY COUNTY        38-015   BURLEIGH COUNTY
+37-125   MOORE COUNTY             38-017   CASS COUNTY
+37-127   NASH COUNTY              38-019   CAVALIER COUNTY
+37-129   NEW HANOVER COUNTY       38-021   DICKEY COUNTY
+37-131   NORTHAMPTON COUNTY       38-023   DIVIDE COUNTY
+37-133   ONSLOW COUNTY            38-025   DUNN COUNTY
+37-135   ORANGE COUNTY            38-027   EDDY COUNTY
+37-137   PAMLICO COUNTY           38-029   EMMONS COUNTY
+37-139   PASQUOTANK COUNTY        38-031   FOSTER COUNTY
+37-141   PENDER COUNTY            38-033   GOLDEN VALLEY COUNTY
+37-143   PERQUIMANS COUNTY        38-035   GRAND FORKS COUNTY
+37-145   PERSON COUNTY            38-037   GRANT COUNTY
+37-147   PITT COUNTY              38-039   GRIGGS COUNTY
+37-149   POLK COUNTY              38-041   HETTINGER COUNTY
+37-151   RANDOLPH COUNTY          38-043   KIDDER COUNTY
+37-153   RICHMOND COUNTY          38-045   LA MOURE COUNTY
+37-155   ROBESON COUNTY           38-047   LOGAN COUNTY
+37-157   ROCKINGHAM COUNTY        38-049   MCHENRY COUNTY
+37-159   ROWAN COUNTY             38-051   MCINTOSH COUNTY
+37-161   RUTHERFORD COUNTY        38-053   MCKENZIE COUNTY
+37-163   SAMPSON COUNTY           38-055   MCLEAN COUNTY
+37-165   SCOTLAND COUNTY          38-057   MERCER COUNTY
+37-167   STANLY COUNTY            38-059   MORTON COUNTY
+37-169   STOKES COUNTY            38-061   MOUNTRAIL COUNTY
+37-171   SURRY COUNTY             38-063   NELSON COUNTY
+37-173   SWAIN COUNTY             38-065   OLIVER COUNTY
+37-175   TRANSYLVANIA COUNTY      38-067   PEMBINA COUNTY
+37-177   TYRRELL COUNTY           38-069   PIERCE COUNTY
+37-179   UNION COUNTY             38-071   RAMSEY COUNTY
+37-181   VANCE COUNTY             38-073   RANSOM COUNTY
+37-183   WAKE COUNTY              38-075   RENVILLE COUNTY
+37-185   WARREN COUNTY            38-077   RICHLAND COUNTY
+37-187   WASHINGTON COUNTY        38-079   ROLETTE COUNTY
+37-189   WATAUGA COUNTY           38-081   SARGENT COUNTY
+37-191   WAYNE COUNTY             38-083   SHERIDAN COUNTY
+37-193   WILKES COUNTY            38-085   SIOUX COUNTY
+37-195   WILSON COUNTY            38-087   SLOPE COUNTY
+37-197   YADKIN COUNTY            38-089   STARK COUNTY
+37-199   YANCEY COUNTY            38-091   STEELE COUNTY
+                                  38-093   STUTSMAN COUNTY
+38-000   NORTH DAKOTA             38-095   TOWNER COUNTY
+
+
+
+
+
+
+38-097   TRAILL COUNTY            39-083   KNOX COUNTY
+38-099   WALSH COUNTY             39-085   LAKE COUNTY
+38-101   WARD COUNTY              39-087   LAWRENCE COUNTY
+38-103   WELLS COUNTY             39-089   LICKING COUNTY
+38-105   WILLIAMS COUNTY          39-091   LOGAN COUNTY
+                                  39-093   LORAIN COUNTY
+39-000   OHIO                     39-095   LUCAS COUNTY
+39-001   ADAMS COUNTY             39-097   MADISON COUNTY
+39-003   ALLEN COUNTY             39-099   MAHONING COUNTY
+39-005   ASHLAND COUNTY           39-101   MARION COUNTY
+39-007   ASHTABULA COUNTY         39-103   MEDINA COUNTY
+39-009   ATHENS COUNTY            39-105   MEIGS COUNTY
+39-011   AUGLAIZE COUNTY          39-107   MERCER COUNTY
+39-013   BELMONT COUNTY           39-109   MIAMI COUNTY
+39-015   BROWN COUNTY             39-111   MONROE COUNTY
+39-017   BUTLER COUNTY            39-113   MONTGOMERY COUNTY
+39-019   CARROLL COUNTY           39-115   MORGAN COUNTY
+39-021   CHAMPAIGN COUNTY         39-117   MORROW COUNTY
+39-023   CLARK COUNTY             39-119   MUSKINGUM COUNTY
+39-025   CLERMONT COUNTY          39-121   NOBLE COUNTY
+39-027   CLINTON COUNTY           39-123   OTTAWA COUNTY
+39-029   COLUMBIANA COUNTY        39-125   PAULDING COUNTY
+39-031   COSHOCTON COUNTY         39-127   PERRY COUNTY
+39-033   CRAWFORD COUNTY          39-129   PICKAWAY COUNTY
+39-035   CUYAHOGA COUNTY          39-131   PIKE COUNTY
+39-037   DARKE COUNTY             39-133   PORTAGE COUNTY
+39-039   DEFIANCE COUNTY          39-135   PREBLE COUNTY
+39-041   DELAWARE COUNTY          39-137   PUTNAM COUNTY
+39-043   ERIE COUNTY              39-139   RICHLAND COUNTY
+39-045   FAIRFIELD COUNTY         39-141   ROSS COUNTY
+39-047   FAYETTE COUNTY           39-143   SANDUSKY COUNTY
+39-049   FRANKLIN COUNTY          39-145   SCIOTO COUNTY
+39-051   FULTON COUNTY            39-147   SENECA COUNTY
+39-053   GALLIA COUNTY            39-149   SHELBY COUNTY
+39-055   GEAUGA COUNTY            39-151   STARK COUNTY
+39-057   GREENE COUNTY            39-153   SUMMIT COUNTY
+39-059   GUERNSEY COUNTY          39-155   TRUMBULL COUNTY
+39-061   HAMILTON COUNTY          39-157   TUSCARAWAS COUNTY
+39-063   HANCOCK COUNTY           39-159   UNION COUNTY
+39-065   HARDIN COUNTY            39-161   VAN WERT COUNTY
+39-067   HARRISON COUNTY          39-163   VINTON COUNTY
+39-069   HENRY COUNTY             39-165   WARREN COUNTY
+39-071   HIGHLAND COUNTY          39-167   WASHINGTON COUNTY
+39-073   HOCKING COUNTY           39-169   WAYNE COUNTY
+39-075   HOLMES COUNTY            39-171   WILLIAMS COUNTY
+39-077   HURON COUNTY             39-173   WOOD COUNTY
+39-079   JACKSON COUNTY           39-175   WYANDOT COUNTY
+39-081   JEFFERSON COUNTY
+
+
+
+
+
+
+40-000   OKLAHOMA                 40-095   MARSHALL COUNTY
+40-001   ADAIR COUNTY             40-097   MAYES COUNTY
+40-003   ALFALFA COUNTY           40-099   MURRAY COUNTY
+40-005   ATOKA COUNTY             40-101   MUSKOGEE COUNTY
+40-007   BEAVER COUNTY            40-103   NOBLE COUNTY
+40-009   BECKHAM COUNTY           40-105   NOWATA COUNTY
+40-011   BLAINE COUNTY            40-107   OKFUSKEE COUNTY
+40-013   BRYAN COUNTY             40-109   OKLAHOMA COUNTY
+40-015   CADDO COUNTY             40-111   OKMULGEE COUNTY
+40-017   CANADIAN COUNTY          40-113   OSAGE COUNTY
+40-019   CARTER COUNTY            40-115   OTTAWA COUNTY
+40-021   CHEROKEE COUNTY          40-117   PAWNEE COUNTY
+40-023   CHOCTAW COUNTY           40-119   PAYNE COUNTY
+40-025   CIMARRON COUNTY          40-121   PITTSBURG COUNTY
+40-027   CLEVELAND COUNTY         40-123   PONTOTOC COUNTY
+40-029   COAL COUNTY              40-125   POTTAWATOMIE COUNTY
+40-031   COMANCHE COUNTY          40-127   PUSHMATAHA COUNTY
+40-033   COTTON COUNTY            40-129   ROGER MILLS COUNTY
+40-035   CRAIG COUNTY             40-131   ROGERS COUNTY
+40-037   CREEK COUNTY             40-133   SEMINOLE COUNTY
+40-039   CUSTER COUNTY            40-135   SEQUOYAH COUNTY
+40-041   DELAWARE COUNTY          40-137   STEPHENS COUNTY
+40-043   DEWEY COUNTY             40-139   TEXAS COUNTY
+40-045   ELLIS COUNTY             40-141   TILLMAN COUNTY
+40-047   GARFIELD COUNTY          40-143   TULSA COUNTY
+40-049   GARVIN COUNTY            40-145   WAGONER COUNTY
+40-051   GRADY COUNTY             40-147   WASHINGTON COUNTY
+40-053   GRANT COUNTY             40-149   WASHITA COUNTY
+40-055   GREER COUNTY             40-151   WOODS COUNTY
+40-057   HARMON COUNTY            40-153   WOODWARD COUNTY
+40-059   HARPER COUNTY
+40-061   HASKELL COUNTY           41-000   OREGON
+40-063   HUGHES COUNTY            41-001   BAKER COUNTY
+40-065   JACKSON COUNTY           41-003   BENTON COUNTY
+40-067   JEFFERSON COUNTY         41-005   CLACKAMAS COUNTY
+40-069   JOHNSTON COUNTY          41-007   CLATSOP COUNTY
+40-071   KAY COUNTY               41-009   COLUMBIA COUNTY
+40-073   KINGFISHER COUNTY        41-011   COOS COUNTY
+40-075   KIOWA COUNTY             41-013   CROOK COUNTY
+40-077   LATIMER COUNTY           41-015   CURRY COUNTY
+40-079   LE FLORE COUNTY          41-017   DESCHUTES COUNTY
+40-081   LINCOLN COUNTY           41-019   DOUGLAS COUNTY
+40-083   LOGAN COUNTY             41-021   GILLIAM COUNTY
+40-085   LOVE COUNTY              41-023   GRANT COUNTY
+40-087   MCCLAIN COUNTY           41-025   HARNEY COUNTY
+40-089   MCCURTAIN COUNTY         41-027   HOOD RIVER COUNTY
+40-091   MCINTOSH COUNTY          41-029   JACKSON COUNTY
+40-093   MAJOR COUNTY             41-031   JEFFERSON COUNTY
+
+
+
+
+
+
+41-033   JOSEPHINE COUNTY         42-053   FOREST COUNTY
+41-035   KLAMATH COUNTY           42-055   FRANKLIN COUNTY
+41-037   LAKE COUNTY              42-057   FULTON COUNTY
+41-039   LANE COUNTY              42-059   GREENE COUNTY
+41-041   LINCOLN COUNTY           42-061   HUNTINGDON COUNTY
+41-043   LINN COUNTY              42-063   INDIANA COUNTY
+41-045   MALHEUR COUNTY           42-065   JEFFERSON COUNTY
+41-047   MARION COUNTY            42-067   JUNIATA COUNTY
+41-049   MORROW COUNTY            42-069   LACKAWANNA COUNTY
+41-051   MULTNOMAH COUNTY         42-071   LANCASTER COUNTY
+41-053   POLK COUNTY              42-073   LAWRENCE COUNTY
+41-055   SHERMAN COUNTY           42-075   LEBANON COUNTY
+41-057   TILLAMOOK COUNTY         42-077   LEHIGH COUNTY
+41-059   UMATILLA COUNTY          42-079   LUZERNE COUNTY
+41-061   UNION COUNTY             42-081   LYCOMING COUNTY
+41-063   WALLOWA COUNTY           42-083   MCKEAN COUNTY
+41-065   WASCO COUNTY             42-085   MERCER COUNTY
+41-067   WASHINGTON COUNTY        42-087   MIFFLIN COUNTY
+41-069   WHEELER COUNTY           42-089   MONROE COUNTY
+41-071   YAMHILL COUNTY           42-091   MONTGOMERY COUNTY
+                                  42-093   MONTOUR COUNTY
+42-000   PENNSYLVANIA             42-095   NORTHAMPTON COUNTY
+42-001   ADAMS COUNTY             42-097   NORTHUMBERLAND COUNT
+42-003   ALLEGHENY COUNTY         42-099   PERRY COUNTY
+42-005   ARMSTRONG COUNTY         42-101   PHILADELPHIA COUNTY
+42-007   BEAVER COUNTY            42-103   PIKE COUNTY
+42-009   BEDFORD COUNTY           42-105   POTTER COUNTY
+42-011   BERKS COUNTY             42-107   SCHUYLKILL COUNTY
+42-013   BLAIR COUNTY             42-109   SNYDER COUNTY
+42-015   BRADFORD COUNTY          42-111   SOMERSET COUNTY
+42-017   BUCKS COUNTY             42-113   SULLIVAN COUNTY
+42-019   BUTLER COUNTY            42-115   SUSQUEHANNA COUNTY
+42-021   CAMBRIA COUNTY           42-117   TIOGA COUNTY
+42-023   CAMERON COUNTY           42-119   UNION COUNTY
+42-025   CARBON COUNTY            42-121   VENANGO COUNTY
+42-027   CENTRE COUNTY            42-123   WARREN COUNTY
+42-029   CHESTER COUNTY           42-125   WASHINGTON COUNTY
+42-031   CLARION COUNTY           42-127   WAYNE COUNTY
+42-033   CLEARFIELD COUNTY        42-129   WESTMORELAND COUNTY
+42-035   CLINTON COUNTY           42-131   WYOMING COUNTY
+42-037   COLUMBIA COUNTY          42-133   YORK COUNTY
+42-039   CRAWFORD COUNTY
+42-041   CUMBERLAND COUNTY        44-000   RHODE ISLAND
+42-043   DAUPHIN COUNTY           44-001   BRISTOL COUNTY
+42-045   DELAWARE COUNTY          44-003   KENT COUNTY
+42-047   ELK COUNTY               44-005   NEWPORT COUNTY
+42-049   ERIE COUNTY              44-007   PROVIDENCE COUNTY
+42-051   FAYETTE COUNTY           44-009   WASHINGTON COUNTY
+
+
+
+
+
+
+45-000   SOUTH CAROLINA           46-000   SOUTH DAKOTA
+45-001   ABBEVILLE COUNTY         46-003   AURORA COUNTY
+45-003   AIKEN COUNTY             46-005   BEADLE COUNTY
+45-005   ALLENDALE COUNTY         46-007   BENNETT COUNTY
+45-007   ANDERSON COUNTY          46-009   BON HOMME COUNTY
+45-009   BAMBERG COUNTY           46-011   BROOKINGS COUNTY
+45-011   BARNWELL COUNTY          46-013   BROWN COUNTY
+45-013   BEAUFORT COUNTY          46-015   BRULE COUNTY
+45-015   BERKELEY COUNTY          46-017   BUFFALO COUNTY
+45-017   CALHOUN COUNTY           46-019   BUTTE COUNTY
+45-019   CHARLESTON COUNTY        46-021   CAMPBELL COUNTY
+45-021   CHEROKEE COUNTY          46-023   CHARLES MIX COUNTY
+45-023   CHESTER COUNTY           46-025   CLARK COUNTY
+45-025   CHESTERFIELD COUNTY      46-027   CLAY COUNTY
+45-027   CLARENDON COUNTY         46-029   CODINGTON COUNTY
+45-029   COLLETON COUNTY          46-031   CORSON COUNTY
+45-031   DARLINGTON COUNTY        46-033   CUSTER COUNTY
+45-033   DILLON COUNTY            46-035   DAVISON COUNTY
+45-035   DORCHESTER COUNTY        46-037   DAY COUNTY
+45-037   EDGEFIELD COUNTY         46-039   DEUEL COUNTY
+45-039   FAIRFIELD COUNTY         46-041   DEWEY COUNTY
+45-041   FLORENCE COUNTY          46-043   DOUGLAS COUNTY
+45-043   GEORGETOWN COUNTY        46-045   EDMUNDS COUNTY
+45-045   GREENVILLE COUNTY        46-047   FALL RIVER COUNTY
+45-047   GREENWOOD COUNTY         46-049   FAULK COUNTY
+45-049   HAMPTON COUNTY           46-051   GRANT COUNTY
+45-051   HORRY COUNTY             46-053   GREGORY COUNTY
+45-053   JASPER COUNTY            46-055   HAAKON COUNTY
+45-055   KERSHAW COUNTY           46-057   HAMLIN COUNTY
+45-057   LANCASTER COUNTY         46-059   HAND COUNTY
+45-059   LAURENS COUNTY           46-061   HANSON COUNTY
+45-061   LEE COUNTY               46-063   HARDING COUNTY
+45-063   LEXINGTON COUNTY         46-065   HUGHES COUNTY
+45-065   MCCORMICK COUNTY         46-067   HUTCHINSON COUNTY
+45-067   MARION COUNTY            46-069   HYDE COUNTY
+45-069   MARLBORO COUNTY          46-071   JACKSON COUNTY
+45-071   NEWBERRY COUNTY          46-073   JERAULD COUNTY
+45-073   OCONEE COUNTY            46-075   JONES COUNTY
+45-075   ORANGEBURG COUNTY        46-077   KINGSBURY COUNTY
+45-077   PICKENS COUNTY           46-079   LAKE COUNTY
+45-079   RICHLAND COUNTY          46-081   LAWRENCE COUNTY
+45-081   SALUDA COUNTY            46-083   LINCOLN COUNTY
+45-083   SPARTANBURG COUNTY       46-085   LYMAN COUNTY
+45-085   SUMTER COUNTY            46-087   MCCOOK COUNTY
+45-087   UNION COUNTY             46-089   MCPHERSON COUNTY
+45-089   WILLIAMSBURG COUNTY      46-091   MARSHALL COUNTY
+45-091   YORK COUNTY              46-093   MEADE COUNTY
+
+
+
+
+
+
+46-095   MELLETTE COUNTY          47-053   GIBSON COUNTY
+46-097   MINER COUNTY             47-055   GILES COUNTY
+46-099   MINNEHAHA COUNTY         47-057   GRAINGER COUNTY
+46-101   MOODY COUNTY             47-059   GREENE COUNTY
+46-103   PENNINGTON COUNTY        47-061   GRUNDY COUNTY
+46-105   PERKINS COUNTY           47-063   HAMBLEN COUNTY
+46-107   POTTER COUNTY            47-065   HAMILTON COUNTY
+46-109   ROBERTS COUNTY           47-067   HANCOCK COUNTY
+46-111   SANBORN COUNTY           47-069   HARDEMAN COUNTY
+46-113   SHANNON COUNTY           47-071   HARDIN COUNTY
+46-115   SPINK COUNTY             47-073   HAWKINS COUNTY
+46-117   STANLEY COUNTY           47-075   HAYWOOD COUNTY
+46-119   SULLY COUNTY             47-077   HENDERSON COUNTY
+46-121   TODD COUNTY              47-079   HENRY COUNTY
+46-123   TRIPP COUNTY             47-081   HICKMAN COUNTY
+46-125   TURNER COUNTY            47-083   HOUSTON COUNTY
+46-127   UNION COUNTY             47-085   HUMPHREYS COUNTY
+46-129   WALWORTH COUNTY          47-087   JACKSON COUNTY
+46-135   YANKTON COUNTY           47-089   JEFFERSON COUNTY
+46-137   ZIEBACH COUNTY           47-091   JOHNSON COUNTY
+                                  47-093   KNOX COUNTY
+47-000   TENNESSEE                47-095   LAKE COUNTY
+47-001   ANDERSON COUNTY          47-097   LAUDERDALE COUNTY
+47-003   BEDFORD COUNTY           47-099   LAWRENCE COUNTY
+47-005   BENTON COUNTY            47-101   LEWIS COUNTY
+47-007   BLEDSOE COUNTY           47-103   LINCOLN COUNTY
+47-009   BLOUNT COUNTY            47-105   LOUDON COUNTY
+47-011   BRADLEY COUNTY           47-107   MCMINN COUNTY
+47-013   CAMPBELL COUNTY          47-109   MCNAIRY COUNTY
+47-015   CANNON COUNTY            47-111   MACON COUNTY
+47-017   CARROLL COUNTY           47-113   MADISON COUNTY
+47-019   CARTER COUNTY            47-115   MARION COUNTY
+47-021   CHEATHAM COUNTY          47-117   MARSHALL COUNTY
+47-023   CHESTER COUNTY           47-119   MAURY COUNTY
+47-025   CLAIBORNE COUNTY         47-121   MEIGS COUNTY
+47-027   CLAY COUNTY              47-123   MONROE COUNTY
+47-029   COCKE COUNTY             47-125   MONTGOMERY COUNTY
+47-031   COFFEE COUNTY            47-127   MOORE COUNTY
+47-033   CROCKETT COUNTY          47-129   MORGAN COUNTY
+47-035   CUMBERLAND COUNTY        47-131   OBION COUNTY
+47-037   DAVIDSON COUNTY          47-133   OVERTON COUNTY
+47-039   DECATUR COUNTY           47-135   PERRY COUNTY
+47-041   DE KALB COUNTY           47-137   PICKETT COUNTY
+47-043   DICKSON COUNTY           47-139   POLK COUNTY
+47-045   DYER COUNTY              47-141   PUTNAM COUNTY
+47-047   FAYETTE COUNTY           47-143   RHEA COUNTY
+47-049   FENTRESS COUNTY          47-145   ROANE COUNTY
+47-051   FRANKLIN COUNTY          47-147   ROBERTSON COUNTY
+
+
+
+
+
+
+47-149   RUTHERFORD COUNTY        48-051   BURLESON COUNTY
+47-151   SCOTT COUNTY             48-053   BURNET COUNTY
+47-153   SEQUATCHIE COUNTY        48-055   CALDWELL COUNTY
+47-155   SEVIER COUNTY            48-057   CALHOUN COUNTY
+47-157   SHELBY COUNTY            48-059   CALLAHAN COUNTY
+47-159   SMITH COUNTY             48-061   CAMERON COUNTY
+47-161   STEWART COUNTY           48-063   CAMP COUNTY
+47-163   SULLIVAN COUNTY          48-065   CARSON COUNTY
+47-165   SUMNER COUNTY            48-067   CASS COUNTY
+47-167   TIPTON COUNTY            48-069   CASTRO COUNTY
+47-169   TROUSDALE COUNTY         48-071   CHAMBERS COUNTY
+47-171   UNICOI COUNTY            48-073   CHEROKEE COUNTY
+47-173   UNION COUNTY             48-075   CHILDRESS COUNTY
+47-175   VAN BUREN COUNTY         48-077   CLAY COUNTY
+47-177   WARREN COUNTY            48-079   COCHRAN COUNTY
+47-179   WASHINGTON COUNTY        48-081   COKE COUNTY
+47-181   WAYNE COUNTY             48-083   COLEMAN COUNTY
+47-183   WEAKLEY COUNTY           48-085   COLLIN COUNTY
+47-185   WHITE COUNTY             48-087   COLLINGSWORTH COUNTY
+47-187   WILLIAMSON COUNTY        48-089   COLORADO COUNTY
+47-189   WILSON COUNTY            48-091   COMAL COUNTY
+                                  48-093   COMANCHE COUNTY
+48-000   TEXAS                    48-095   CONCHO COUNTY
+48-001   ANDERSON COUNTY          48-097   COOKE COUNTY
+48-003   ANDREWS COUNTY           48-099   CORYELL COUNTY
+48-005   ANGELINA COUNTY          48-101   COTTLE COUNTY
+48-007   ARANSAS COUNTY           48-103   CRANE COUNTY
+48-009   ARCHER COUNTY            48-105   CROCKETT COUNTY
+48-011   ARMSTRONG COUNTY         48-107   CROSBY COUNTY
+48-013   ATASCOSA COUNTY          48-109   CULBERSON COUNTY
+48-015   AUSTIN COUNTY            48-111   DALLAM COUNTY
+48-017   BAILEY COUNTY            48-113   DALLAS COUNTY
+48-019   BANDERA COUNTY           48-115   DAWSON COUNTY
+48-021   BASTROP COUNTY           48-117   DEAF SMITH COUNTY
+48-023   BAYLOR COUNTY            48-119   DELTA COUNTY
+48-025   BEE COUNTY               48-121   DENTON COUNTY
+48-027   BELL COUNTY              48-123   DE WITT COUNTY
+48-029   BEXAR COUNTY             48-125   DICKENS COUNTY
+48-031   BLANCO COUNTY            48-127   DIMMIT COUNTY
+48-033   BORDEN COUNTY            48-129   DONLEY COUNTY
+48-035   BOSQUE COUNTY            48-131   DUVAL COUNTY
+48-037   BOWIE COUNTY             48-133   EASTLAND COUNTY
+48-039   BRAZORIA COUNTY          48-135   ECTOR COUNTY
+48-041   BRAZOS COUNTY            48-137   EDWARDS COUNTY
+48-043   BREWSTER COUNTY          48-139   ELLIS COUNTY
+48-045   BRISCOE COUNTY           48-141   EL PASO COUNTY
+48-047   BROOKS COUNTY            48-143   ERATH COUNTY
+48-049   BROWN COUNTY             48-145   FALLS COUNTY
+
+
+
+
+
+
+48-147   FANNIN COUNTY            48-243   JEFF DAVIS COUNTY
+48-149   FAYETTE COUNTY           48-245   JEFFERSON COUNTY
+48-151   FISHER COUNTY            48-247   JIM HOGG COUNTY
+48-153   FLOYD COUNTY             48-249   JIM WELLS COUNTY
+48-155   FOARD COUNTY             48-251   JOHNSON COUNTY
+48-157   FORT BEND COUNTY         48-253   JONES COUNTY
+48-159   FRANKLIN COUNTY          48-255   KARNES COUNTY
+48-161   FREESTONE COUNTY         48-257   KAUFMAN COUNTY
+48-163   FRIO COUNTY              48-259   KENDALL COUNTY
+48-165   GAINES COUNTY            48-261   KENEDY COUNTY
+48-167   GALVESTON COUNTY         48-263   KENT COUNTY
+48-169   GARZA COUNTY             48-265   KERR COUNTY
+48-171   GILLESPIE COUNTY         48-267   KIMBLE COUNTY
+48-173   GLASSCOCK COUNTY         48-269   KING COUNTY
+48-175   GOLIAD COUNTY            48-271   KINNEY COUNTY
+48-177   GONZALES COUNTY          48-273   KLEBERG COUNTY
+48-179   GRAY COUNTY              48-275   KNOX COUNTY
+48-181   GRAYSON COUNTY           48-277   LAMAR COUNTY
+48-183   GREGG COUNTY             48-279   LAMB COUNTY
+48-185   GRIMES COUNTY            48-281   LAMPASAS COUNTY
+48-187   GUADALUPE COUNTY         48-283   LA SALLE COUNTY
+48-189   HALE COUNTY              48-285   LAVACA COUNTY
+48-191   HALL COUNTY              48-287   LEE COUNTY
+48-193   HAMILTON COUNTY          48-289   LEON COUNTY
+48-195   HANSFORD COUNTY          48-291   LIBERTY COUNTY
+48-197   HARDEMAN COUNTY          48-293   LIMESTONE COUNTY
+48-199   HARDIN COUNTY            48-295   LIPSCOMB COUNTY
+48-201   HARRIS COUNTY            48-297   LIVE OAK COUNTY
+48-203   HARRISON COUNTY          48-299   LLANO COUNTY
+48-205   HARTLEY COUNTY           48-301   LOVING COUNTY
+48-207   HASKELL COUNTY           48-303   LUBBOCK COUNTY
+48-209   HAYS COUNTY              48-305   LYNN COUNTY
+48-211   HEMPHILL COUNTY          48-307   MCCULLOCH COUNTY
+48-213   HENDERSON COUNTY         48-309   MCLENNAN COUNTY
+48-215   HIDALGO COUNTY           48-311   MCMULLEN COUNTY
+48-217   HILL COUNTY              48-313   MADISON COUNTY
+48-219   HOCKLEY COUNTY           48-315   MARION COUNTY
+48-221   HOOD COUNTY              48-317   MARTIN COUNTY
+48-223   HOPKINS COUNTY           48-319   MASON COUNTY
+48-225   HOUSTON COUNTY           48-321   MATAGORDA COUNTY
+48-227   HOWARD COUNTY            48-323   MAVERICK COUNTY
+48-229   HUDSPETH COUNTY          48-325   MEDINA COUNTY
+48-231   HUNT COUNTY              48-327   MENARD COUNTY
+48-233   HUTCHINSON COUNTY        48-329   MIDLAND COUNTY
+48-235   IRION COUNTY             48-331   MILAM COUNTY
+48-237   JACK COUNTY              48-333   MILLS COUNTY
+48-239   JACKSON COUNTY           48-335   MITCHELL COUNTY
+48-241   JASPER COUNTY            48-337   MONTAGUE COUNTY
+
+
+
+
+
+
+48-339   MONTGOMERY COUNTY        48-435   SUTTON COUNTY
+48-341   MOORE COUNTY             48-437   SWISHER COUNTY
+48-343   MORRIS COUNTY            48-439   TARRANT COUNTY
+48-345   MOTLEY COUNTY            48-441   TAYLOR COUNTY
+48-347   NACOGDOCHES COUNTY       48-443   TERRELL COUNTY
+48-349   NAVARRO COUNTY           48-445   TERRY COUNTY
+48-351   NEWTON COUNTY            48-447   THROCKMORTON COUNTY
+48-353   NOLAN COUNTY             48-449   TITUS COUNTY
+48-355   NUECES COUNTY            48-451   TOM GREEN COUNTY
+48-357   OCHILTREE COUNTY         48-453   TRAVIS COUNTY
+48-359   OLDHAM COUNTY            48-455   TRINITY COUNTY
+48-361   ORANGE COUNTY            48-457   TYLER COUNTY
+48-363   PALO PINTO COUNTY        48-459   UPSHUR COUNTY
+48-365   PANOLA COUNTY            48-461   UPTON COUNTY
+48-367   PARKER COUNTY            48-463   UVALDE COUNTY
+48-369   PARMER COUNTY            48-465   VAL VERDE COUNTY
+48-371   PECOS COUNTY             48-467   VAN ZANDT COUNTY
+48-373   POLK COUNTY              48-469   VICTORIA COUNTY
+48-375   POTTER COUNTY            48-471   WALKER COUNTY
+48-377   PRESIDIO COUNTY          48-473   WALLER COUNTY
+48-379   RAINS COUNTY             48-475   WARD COUNTY
+48-381   RANDALL COUNTY           48-477   WASHINGTON COUNTY
+48-383   REAGAN COUNTY            48-479   WEBB COUNTY
+48-385   REAL COUNTY              48-481   WHARTON COUNTY
+48-387   RED RIVER COUNTY         48-483   WHEELER COUNTY
+48-389   REEVES COUNTY            48-485   WICHITA COUNTY
+48-391   REFUGIO COUNTY           48-487   WILBARGER COUNTY
+48-393   ROBERTS COUNTY           48-489   WILLACY COUNTY
+48-395   ROBERTSON COUNTY         48-491   WILLIAMSON COUNTY
+48-397   ROCKWALL COUNTY          48-493   WILSON COUNTY
+48-399   RUNNELS COUNTY           48-495   WINKLER COUNTY
+48-401   RUSK COUNTY              48-497   WISE COUNTY
+48-403   SABINE COUNTY            48-499   WOOD COUNTY
+48-405   SAN AUGUSTINE COUNTY     48-501   YOAKUM COUNTY
+48-407   SAN JACINTO COUNTY       48-503   YOUNG COUNTY
+48-409   SAN PATRICIO COUNTY      48-505   ZAPATA COUNTY
+48-411   SAN SABA COUNTY          48-507   ZAVALA COUNTY
+48-413   SCHLEICHER COUNTY
+48-415   SCURRY COUNTY            49-000   UTAH
+48-417   SHACKELFORD COUNTY       49-001   BEAVER COUNTY
+48-419   SHELBY COUNTY            49-003   BOX ELDER COUNTY
+48-421   SHERMAN COUNTY           49-005   CACHE COUNTY
+48-423   SMITH COUNTY             49-007   CARBON COUNTY
+48-425   SOMERVELL COUNTY         49-009   DAGGETT COUNTY
+48-427   STARR COUNTY             49-011   DAVIS COUNTY
+48-429   STEPHENS COUNTY          49-013   DUCHESNE COUNTY
+48-431   STERLING COUNTY          49-015   EMERY COUNTY
+48-433   STONEWALL COUNTY         49-017   GARFIELD COUNTY
+
+
+
+
+
+
+49-019   GRAND COUNTY             51-021   BLAND COUNTY
+49-021   IRON COUNTY              51-023   BOTETOURT COUNTY
+49-023   JUAB COUNTY              51-025   BRUNSWICK COUNTY
+49-025   KANE COUNTY              51-027   BUCHANAN COUNTY
+49-027   MILLARD COUNTY           51-029   BUCKINGHAM COUNTY
+49-029   MORGAN COUNTY            51-031   CAMPBELL COUNTY
+49-031   PIUTE COUNTY             51-033   CAROLINE COUNTY
+49-033   RICH COUNTY              51-035   CARROLL COUNTY
+49-035   SALT LAKE COUNTY         51-036   CHARLES CITY COUNTY
+49-037   SAN JUAN COUNTY          51-037   CHARLOTTE COUNTY
+49-039   SANPETE COUNTY           51-041   CHESTERFIELD COUNTY
+49-041   SEVIER COUNTY            51-043   CLARKE COUNTY
+49-043   SUMMIT COUNTY            51-045   CRAIG COUNTY
+49-045   TOOELE COUNTY            51-047   CULPEPER COUNTY
+49-047   UINTAH COUNTY            51-049   CUMBERLAND COUNTY
+49-049   UTAH COUNTY              51-051   DICKENSON COUNTY
+49-051   WASATCH COUNTY           51-053   DINWIDDIE COUNTY
+49-053   WASHINGTON COUNTY        51-057   ESSEX COUNTY
+49-055   WAYNE COUNTY             51-059   FAIRFAX COUNTY
+49-057   WEBER COUNTY             51-061   FAUQUIER COUNTY
+                                  51-063   FLOYD COUNTY
+50-000   VERMONT                  51-065   FLUVANNA COUNTY
+50-001   ADDISON COUNTY           51-067   FRANKLIN COUNTY
+50-003   BENNINGTON COUNTY        51-069   FREDERICK COUNTY
+50-005   CALEDONIA COUNTY         51-071   GILES COUNTY
+50-007   CHITTENDEN COUNTY        51-073   GLOUCESTER COUNTY
+50-009   ESSEX COUNTY             51-075   GOOCHLAND COUNTY
+50-011   FRANKLIN COUNTY          51-077   GRAYSON COUNTY
+50-013   GRAND ISLE COUNTY        51-079   GREENE COUNTY
+50-015   LAMOILLE COUNTY          51-081   GREENSVILLE COUNTY
+50-017   ORANGE COUNTY            51-083   HALIFAX COUNTY
+50-019   ORLEANS COUNTY           51-085   HANOVER COUNTY
+50-021   RUTLAND COUNTY           51-087   HENRICO COUNTY
+50-023   WASHINGTON COUNTY        51-089   HENRY COUNTY
+50-025   WINDHAM COUNTY           51-091   HIGHLAND COUNTY
+50-027   WINDSOR COUNTY           51-093   ISLE OF WIGHT COUNTY
+                                  51-095   JAMES CITY COUNTY
+51-000   VIRGINIA                 51-097   KING AND QUEEN COUNT
+51-001   ACCOMACK COUNTY          51-099   KING GEORGE COUNTY
+51-003   ALBEMARLE COUNTY         51-101   KING WILLIAM COUNTY
+51-005   ALLEGHANY COUNTY         51-103   LANCASTER COUNTY
+51-007   AMELIA COUNTY            51-105   LEE COUNTY
+51-009   AMHERST COUNTY           51-107   LOUDOUN COUNTY
+51-011   APPOMATTOX COUNTY        51-109   LOUISA COUNTY
+51-013   ARLINGTON COUNTY         51-111   LUNENBURG COUNTY
+51-015   AUGUSTA COUNTY           51-113   MADISON COUNTY
+51-017   BATH COUNTY              51-115   MATHEWS COUNTY
+51-019   BEDFORD COUNTY           51-117   MECKLENBURG COUNTY
+
+
+
+
+
+
+51-119   MIDDLESEX COUNTY         51-600   FAIRFAX
+51-121   MONTGOMERY COUNTY        51-610   FALLS CHURCH
+51-125   NELSON COUNTY            51-620   FRANKLIN
+51-127   NEW KENT COUNTY          51-630   FREDERICKSBURG
+51-131   NORTHAMPTON COUNTY       51-640   GALAX
+51-133   NORTHUMBERLAND COUNT     51-650   HAMPTON
+51-135   NOTTOWAY COUNTY          51-660   HARRISONBURG
+51-137   ORANGE COUNTY            51-670   HOPEWELL
+51-139   PAGE COUNTY              51-678   LEXINGTON
+51-141   PATRICK COUNTY           51-680   LYNCHBURG
+51-143   PITTSYLVANIA COUNTY      51-683   MANASSAS
+51-145   POWHATAN COUNTY          51-685   MANASSAS PARK
+51-147   PRINCE EDWARD COUNTY     51-690   MARTINSVILLE
+51-149   PRINCE GEORGE COUNTY     51-700   NEWPORT NEWS
+51-153   PRINCE WILLIAM COUNT     51-710   NORFOLK
+51-155   PULASKI COUNTY           51-720   NORTON
+51-157   RAPPAHANNOCK COUNTY      51-730   PETERSBURG
+51-159   RICHMOND COUNTY          51-735   POQUOSON
+51-161   ROANOKE COUNTY           51-740   PORTSMOUTH
+51-163   ROCKBRIDGE COUNTY        51-750   RADFORD
+51-165   ROCKINGHAM COUNTY        51-760   RICHMOND
+51-167   RUSSELL COUNTY           51-770   ROANOKE
+51-169   SCOTT COUNTY             51-775   SALEM
+51-171   SHENANDOAH COUNTY
+51-173   SMYTH COUNTY             51-790   STAUNTON
+51-175   SOUTHAMPTON COUNTY       51-800   SUFFOLK
+51-177   SPOTSYLVANIA COUNTY      51-810   VIRGINIA BEACH
+51-179   STAFFORD COUNTY          51-820   WAYNESBORO
+51-181   SURRY COUNTY             51-830   WILLIAMSBURG
+51-183   SUSSEX COUNTY            51-840   WINCHESTER
+51-185   TAZEWELL COUNTY
+51-187   WARREN COUNTY            53-000   WASHINGTON
+51-191   WASHINGTON COUNTY        53-001   ADAMS COUNTY
+51-193   WESTMORELAND COUNTY      53-003   ASOTIN COUNTY
+51-195   WISE COUNTY              53-005   BENTON COUNTY
+51-197   WYTHE COUNTY             53-007   CHELAN COUNTY
+51-199   YORK COUNTY              53-009   CLALLAM COUNTY
+51-510   ALEXANDRIA               53-011   CLARK COUNTY
+51-515   BEDFORD                  53-013   COLUMBIA COUNTY
+51-520   BRISTOL                  53-015   COWLITZ COUNTY
+51-530   BUENA VISTA              53-017   DOUGLAS COUNTY
+51-540   CHARLOTTESVILLE          53-019   FERRY COUNTY
+51-550   CHESAPEAKE               53-021   FRANKLIN COUNTY
+                                  53-023   GARFIELD COUNTY
+51-570   COLONIAL HEIGHTS         53-025   GRANT COUNTY
+51-580   COVINGTON                53-027   GRAYS HARBOR COUNTY
+51-590   DANVILLE                 53-029   ISLAND COUNTY
+51-595   EMPORIA                  53-031   JEFFERSON COUNTY
+
+
+
+
+
+
+53-033   KING COUNTY              54-047   MCDOWELL COUNTY
+53-035   KITSAP COUNTY            54-049   MARION COUNTY
+53-037   KITTITAS COUNTY          54-051   MARSHALL COUNTY
+53-039   KLICKITAT COUNTY         54-053   MASON COUNTY
+53-041   LEWIS COUNTY             54-055   MERCER COUNTY
+53-043   LINCOLN COUNTY           54-057   MINERAL COUNTY
+53-045   MASON COUNTY             54-059   MINGO COUNTY
+53-047   OKANOGAN COUNTY          54-061   MONONGALIA COUNTY
+53-049   PACIFIC COUNTY           54-063   MONROE COUNTY
+53-051   PEND OREILLE COUNTY      54-065   MORGAN COUNTY
+53-053   PIERCE COUNTY            54-067   NICHOLAS COUNTY
+53-055   SAN JUAN COUNTY          54-069   OHIO COUNTY
+53-057   SKAGIT COUNTY            54-071   PENDLETON COUNTY
+53-059   SKAMANIA COUNTY          54-073   PLEASANTS COUNTY
+53-061   SNOHOMISH COUNTY         54-075   POCAHONTAS COUNTY
+53-063   SPOKANE COUNTY           54-077   PRESTON COUNTY
+53-065   STEVENS COUNTY           54-079   PUTNAM COUNTY
+53-067   THURSTON COUNTY          54-081   RALEIGH COUNTY
+53-069   WAHKIAKUM COUNTY         54-083   RANDOLPH COUNTY
+53-071   WALLA WALLA COUNTY       54-085   RITCHIE COUNTY
+53-073   WHATCOM COUNTY           54-087   ROANE COUNTY
+53-075   WHITMAN COUNTY           54-089   SUMMERS COUNTY
+53-077   YAKIMA COUNTY            54-091   TAYLOR COUNTY
+                                  54-093   TUCKER COUNTY
+54-000   WEST VIRGINIA            54-095   TYLER COUNTY
+54-001   BARBOUR COUNTY           54-097   UPSHUR COUNTY
+54-003   BERKELEY COUNTY          54-099   WAYNE COUNTY
+54-005   BOONE COUNTY             54-101   WEBSTER COUNTY
+54-007   BRAXTON COUNTY           54-103   WETZEL COUNTY
+54-009   BROOKE COUNTY            54-105   WIRT COUNTY
+54-011   CABELL COUNTY            54-107   WOOD COUNTY
+54-013   CALHOUN COUNTY           54-109   WYOMING COUNTY
+54-015   CLAY COUNTY
+54-017   DODDRIDGE COUNTY         55-000   WISCONSIN
+54-019   FAYETTE COUNTY           55-001   ADAMS COUNTY
+54-021   GILMER COUNTY            55-003   ASHLAND COUNTY
+54-023   GRANT COUNTY             55-005   BARRON COUNTY
+54-025   GREENBRIER COUNTY        55-007   BAYFIELD COUNTY
+54-027   HAMPSHIRE COUNTY         55-009   BROWN COUNTY
+54-029   HANCOCK COUNTY           55-011   BUFFALO COUNTY
+54-031   HARDY COUNTY             55-013   BURNETT COUNTY
+54-033   HARRISON COUNTY          55-015   CALUMET COUNTY
+54-035   JACKSON COUNTY           55-017   CHIPPEWA COUNTY
+54-037   JEFFERSON COUNTY         55-019   CLARK COUNTY
+54-039   KANAWHA COUNTY           55-021   COLUMBIA COUNTY
+54-041   LEWIS COUNTY             55-023   CRAWFORD COUNTY
+54-043   LINCOLN COUNTY           55-025   DANE COUNTY
+54-045   LOGAN COUNTY             55-027   DODGE COUNTY
+
+
+
+
+
+
+55-029   DOOR COUNTY              55-123   VERNON COUNTY
+55-031   DOUGLAS COUNTY           55-125   VILAS COUNTY
+55-033   DUNN COUNTY              55-127   WALWORTH COUNTY
+55-035   EAU CLAIRE COUNTY        55-129   WASHBURN COUNTY
+55-037   FLORENCE COUNTY          55-131   WASHINGTON COUNTY
+55-039   FOND DU LAC COUNTY       55-133   WAUKESHA COUNTY
+55-041   FOREST COUNTY            55-135   WAUPACA COUNTY
+55-043   GRANT COUNTY             55-137   WAUSHARA COUNTY
+55-045   GREEN COUNTY             55-139   WINNEBAGO COUNTY
+55-047   GREEN LAKE COUNTY        55-141   WOOD COUNTY
+55-049   IOWA COUNTY
+55-051   IRON COUNTY              56-000   WYOMING
+55-053   JACKSON COUNTY           56-001   ALBANY COUNTY
+55-055   JEFFERSON COUNTY         56-003   BIG HORN COUNTY
+55-057   JUNEAU COUNTY            56-005   CAMPBELL COUNTY
+55-059   KENOSHA COUNTY           56-007   CARBON COUNTY
+55-061   KEWAUNEE COUNTY          56-009   CONVERSE COUNTY
+55-063   LA CROSSE COUNTY         56-011   CROOK COUNTY
+55-065   LAFAYETTE COUNTY         56-013   FREMONT COUNTY
+55-067   LANGLADE COUNTY          56-015   GOSHEN COUNTY
+55-069   LINCOLN COUNTY           56-017   HOT SPRINGS COUNTY
+55-071   MANITOWOC COUNTY         56-019   JOHNSON COUNTY
+55-073   MARATHON COUNTY          56-021   LARAMIE COUNTY
+55-075   MARINETTE COUNTY         56-023   LINCOLN COUNTY
+55-077   MARQUETTE COUNTY         56-025   NATRONA COUNTY
+55-078   MENOMINEE COUNTY         56-027   NIOBRARA COUNTY
+55-079   MILWAUKEE COUNTY         56-029   PARK COUNTY
+55-081   MONROE COUNTY            56-031   PLATTE COUNTY
+55-083   OCONTO COUNTY            56-033   SHERIDAN COUNTY
+55-085   ONEIDA COUNTY            56-035   SUBLETTE COUNTY
+55-087   OUTAGAMIE COUNTY         56-037   SWEETWATER COUNTY
+55-089   OZAUKEE COUNTY           56-039   TETON COUNTY
+55-091   PEPIN COUNTY             56-041   UINTA COUNTY
+55-093   PIERCE COUNTY            56-043   WASHAKIE COUNTY
+55-095   POLK COUNTY              56-045   WESTON COUNTY
+55-097   PORTAGE COUNTY
+55-099   PRICE COUNTY             57-000   FOREIGN
+55-101   RACINE COUNTY            57-001   FOREIGN COUNTRIES
+55-103   RICHLAND COUNTY          57-003   PUERTO RICO
+55-105   ROCK COUNTY              57-005   APO/ FPO ZIP CODES
+55-107   RUSK COUNTY              57-007   VIRGIN ISLANDS
+55-109   ST. CROIX COUNTY
+55-111   SAUK COUNTY
+55-113   SAWYER COUNTY
+55-115   SHAWANO COUNTY
+55-117   SHEBOYGAN COUNTY
+55-119   TAYLOR COUNTY
+55-121   TREMPEALEAU COUNTY
+
+
+
+
+
+
+     Part F -- Code List for Summary Level Categories
+     in the County-to-County Migration Flow Data
+
+
+               Totals of All Migration Flows:
+
+Total migration                                      96-000
+Total migration to/from U.S.                         97-000
+  Migration to/from different county in same state   97-001
+  Migration to/from different state                  97-003
+Total migration to/from foreign                      98-000
+
+
+                     Non-Migrants:
+
+Special codes for non-migrants are not used.  The record can be
+identified where the origin state and county code are the same as
+the destination state and county code.
+
+
+      Summaries for Migration Flows Not Separately Shown
+
+Migration to/from different county in same state    58-000
+Migration to/from different state                   59-000
+  Migration to/from the Northeast region            59-001
+  Migration to/from the Midwest region              59-003
+  Migration to/from the South region                59-005
+  Migration to/from the West region                 59-007
+Other foreign flows                                 57-009
+
+
+   Northeast Region (59-001)           Midwest Region (59-003):
+
+Connecticut  (09-000)               Illinois  (17-000)
+Maine  (23-000)                     Indiana  (18-000)
+Massachusetts  (25-000)             Iowa  (19-000)
+New Hampshire  (33-000)             Kansas  (20-000)
+New Jersey  (34-000)                Michigan  (26-000)
+New York  (36-000)                  Minnesota  (27-000)
+Pennsylvania  (42-000)              Missouri  (29-000)
+Rhode island  (44-000)              Nebraska  (31-000)
+Vermont  (50-000)                   North Dakota  (38-000)
+                                    Ohio  (39-000)
+                                    South Dakota  (46-000)
+                                    Wisconsin  (55-000)
+
+
+   South Region (59-005)               West Region (59-007):
+
+Alabama   (01-000)                  Alaska   (02-000)
+Arkansas   (05-000)                 Arizona   (04-000)
+Delaware   (10-000)                 California   (06-000)
+District of Columbia (11-000)       Colorado   (08-000)
+Florida   (12-000)                  Hawaii   (15-000)
+Georgia   (13-000)                  Idaho   (16-000)
+Kentucky   (21-000)                 Montana   (30-000)
+Louisiana   (22-000)                Nevada   (32-000)
+Maryland   (24-000)                 New Mexico   (35-000)
+Mississippi (28-000)                Oregon   (41-000)
+North Carolina   (37-000)           Utah   (49-000)
+Oklahoma   (40-000)                 Washington   (53-000)
+South Carolina   (45-000)           Wyoming   (56-000)
+Tennessee   (47-000)
+Texas   (48-000)
+Virginia   (51-000)
+West Virginia   (54-000)
+
+
+
+
+
+
+        Part G -- Research and Evaluation Papers
+
+
+The following shows a list of research and evaluation papers that
+are relevant to the data contained in the external data products:
+
+    Sater, Douglas K., "Differences Between the UNISYS Processing
+and the New ARPS Processing, and its Impact on County Migration ,
+Administrative Records Processing System Results Memorandum No. 2,
+September, 1997
+
+    Sater, Douglas K., "Differences Between the UNISYS Processing
+and the New ARPS Processing, and its Impact on the BEA Aggregate
+Income Tallies for Tax Year 1995", Administrative Records
+Processing System Results Memorandum No. 3, September, 1997
+
+    Sater, Douglas K., "Differences Between Median Total Money
+Income and Median Adjusted Gross Income in the State-to-State and
+County-to-County Flow Data for Tax Year", Administrative Records
+Processing System Results Memorandum No. 4, September, 1997
+
+    Creech, James, and Sater, Douglas K., "Evaluation of
+Differences Between the State-to-State and County-to-County
+Migration Flows Derived From The CCRS County Codes and the Old
+Herriot County Codes for Tax Year 1994-1995, Administrative Records
+Processing System Results Memorandum No. 6, February, 1998
+
+    Sater, Douglas K., "Differences Between Median Total Money
+Income and Median Adjusted Gross Income in the State-to-State and
+County-to-County Flow Data for Tax Year", Administrative Records
+Processing System Results Memorandum No. 4, September, 1997
+
+
+
+
+
+
+         Part H -- Suppression Procedures
+
+
+In order to protect the confidentiality of information for
+individual taxpayers, data cells that are based on a small number
+of returns will not be shown.  For state level tabulations, the
+cell must be based on atleast 3 returns to be shown.  For county
+level tabulations, the cell must be based on atleast 10 returns to
+be shown.  All other data cells will be suppressed.  The
+suppression procedures are designed to maintain additivity across
+and within geographic levels, and comparability across data
+products.
+
+A variety of suppression methods are used.  The data cell may be
+suppressed by replacing the data with "d".  The data may be
+suppressed by adding the value into another data cell, and
+replacing the value with "d".  The data cell may be suppressed by
+adding the value into the value for another piece of geography, and
+replacing the value with "d".  Data cells may be suppressed by
+accumulating the data into higher level geographic levels, and not
+showing the lowest geographic level.  In addition to the direct
+suppression of selected data cells, complimentary suppression of
+other data cells may be done to prevent the rederivation of
+suppressed data from the totals or from other data products.
+Complimentary suppression may be done across data cells or across
+geography.
+
+This remainder of this section contains more detail on the
+suppression procedures for the four data products.  It is not
+generally distributed as a part of this documentation package, but
+can be made available upon request.
+
+
+
+
+
+
+       Part H.1 -- Suppression Procedures for the
+         State and County Gross Migration File
+
+Note that state and county records are handled exactly the same in
+suppression procedures for state and county gross migration data.
+That is, a more restrictive rule of 10 returns is used for states
+rather than the standard rule of 3 returns.
+
+A.  Suppression of all data:
+
+If the total number of returns is less than 10 then all data for
+the county will be suppressed.
+
+
+B. Suppression of number of returns, total  exemptions,  under 65
+exemptions and 65+ exemptions:
+
+If the number of "year-1 onlys" is less than 10 returns, then the
+number of returns, total exemptions, under 65 exemptions and 65+
+exemptions will be suppressed (by replacing the data with d) for
+the following data cells: "year-1 only".
+
+If the number of "matched returns" or the number of "year-2 onlys"
+is less than 10 returns, then the number of returns, total
+exemptions, under 65 exemptions and 65+ exemptions will be
+suppressed (by replacing the data with d) for the following data
+cells: "matched returns", "non-migrants", "out-migrants to
+foreign", "out-migrants to different state", "out-migrants to
+different county in same state",  "in-migrants from foreign", "in-
+migrants from different state", "in-migrants from different county
+in same state", and "year-2 only".
+
+Otherwise, if the number of "non-migrant" returns, sum of "in-
+migrant" returns or sum of "out-migrant" returns is less than 10
+then the number of returns, total exemptions, under 65 exemptions
+and 65+ exemptions will be suppressed (by replacing the data with
+d) for the following data cells   "non-migrants", "out-migrants
+to foreign", "out-migrants to different state", "out-migrants to
+different county in same state",  "in-migrants from foreign", "in-
+migrants from different state", and "in-migrants from different
+county in same state".
+
+Otherwise:
+
+    (A). If the number of returns for "out-migrants to foreign"
+         is less than 10, then the number of returns, total
+         exemptions, under 65 exemptions and 65+ exemptions for
+         "out-migrants to foreign" will be suppressed by adding
+         the number into the category "out-migrants to different
+         state".
+
+    (B). (After A is done) If the number of returns for "out-
+         migrants to different state" is less than 10, then the
+         number of returns, total exemptions, under 65 exemptions
+         and 65+ exemptions for "out-migrants to different state"
+         will be suppressed by adding the number into the
+         category "out-migrants to different county in same
+         state".
+
+    (C). (After A and B are done) If the number of returns for
+         "out-migrants to different county in state" is less than
+         10, then the number of returns, total exemptions, under
+         65 exemptions and 65+ exemptions for "out-migrants to
+         different state" will be suppressed by: (1) adding the
+         number into the category "out-migrants to different
+         state", if it was not previously suppressed; or (2)
+         adding the number into the category "out-migrants to
+         foreign", if the category "out-migrants to different
+         state" was previously suppressed.
+
+    (D). If the number of returns for "in-migrants from foreign"
+         is less than 10, then the number of returns, total
+         exemptions, under 65 exemptions and 65+ exemptions for
+         "in-migrants from foreign" will be suppressed by adding
+         the number into the category "in-migrants from different
+         state".
+
+    (E). (After D is done) If the number of returns for "in-
+         migrants from different state" is less than 10, then the
+         number of returns, total exemptions, under 65 exemptions
+         and 65+ exemptions for "in-migrants from different
+         state" will be suppressed by adding the number into the
+         category "in-migrants from different county in same
+         state".
+
+    (F). (After D and E are done) If the number of returns for
+         "in-migrants from different county in state" is less
+         than 10, then the number of returns, total exemptions,
+         under 65 exemptions and 65+ exemptions for "in-migrants
+         from different state" will be suppressed by: (1) adding
+         the number into the category "in-migrants from different
+         state", if it was not previously suppressed; or (2)
+         adding the number into the category "in-migrants from
+         foreign", if the category "in-migrants from different
+         state" was previously suppressed.
+
+
+C.   Extra suppression required for under 65 exemptions and
+65+ exemptions:
+
+If the number of under 65 exemptions or the number of 65+
+exemptions for "total", then suppress (by replacing the number with
+d), the number of under 65 exemptions and the number of 65+
+exemptions for the following data cells   "Total returns", "matched
+returns", "non-migrants", "out-migrants to foreign", "out-migrants
+to different state", "out-migrants to different county in same
+state",  "in-migrants from foreign", "in-migrants from different
+state", "in-migrants from different county in same state", "year-1
+only" and "year-2" only.
+
+Otherwise, if the number of under 65 exemptions or the number of
+65+ exemptions for "matched returns", "year-1 only", or "year-2
+only", then suppress (by replacing the number with d), the number
+of under 65 exemptions and the number of 65+ exemptions for the
+following data cells   "matched returns", "non-migrants", "out-
+migrants to foreign", "out-migrants to different state", "out-
+migrants to different county in same state",  "in-migrants from
+foreign", "in-migrants from different state", "in-migrants from
+different county in same state", "year-1 only" and "year-2" only.
+
+Otherwise, if the number of under 65 exemptions or the number of
+65+ exemptions for "non-migrants", sum of "in-migrants" returns or
+sum of "out-migrants" is less than 10 then suppress (by replacing
+the number with d), the number of under 65 exemptions and the
+number of 65+ exemptions for the following data cells   "non-
+migrants", "out-migrants to foreign", "out-migrants to different
+state", "out-migrants to different county in same state",  "in-
+migrants from foreign", "in-migrants from different state", and
+"in-migrants from different county in same state".
+
+Otherwise:
+
+    (A). If the number of under 65 exemptions or the number of
+         65+ exemptions for "out-migrants to foreign" is less
+         than 10, then suppress (by replacing the number with d)
+         the number of under 65 exemptions and the number of 65+
+         exemptions for "out-migrants to foreign".
+
+    (B). If the number of under 65 exemptions or the number of
+         65+ exemptions for "out-migrants to different state" is
+         less than 10, then suppress (by replacing the number
+         with d) the number of under 65 exemptions and the
+         number of 65+ exemptions for "out-migrants to different
+         state".
+
+    (C). If the number of under 65 exemptions or the number of
+         65+ exemptions for "out-migrants to different county in
+         same state" is less than 10, then suppress (by replacing
+         the number with d) the number of under 65 exemptions
+         and the number of 65+ exemptions for "out-migrants to
+         different county in same state".
+
+    (D). If the number of under 65 exemptions or the number of
+         65+ exemptions for "in-migrants from foreign" is less
+         than 10, then suppress (by replacing the number with d)
+         the number of under 65 exemptions and the number of 65+
+         exemptions for "in-migrants from foreign".
+
+    (E). If the number of under 65 exemptions or the number of
+         65+ exemptions for "in-migrants from different state" is
+         less than 10, then suppress (by replacing the number
+         with d) the number of under 65 exemptions and the
+         number of 65+ exemptions for "in-migrants from different
+         state".
+
+    (F). If the number of under 65 exemptions or the number of
+         65+ exemptions for "in-migrants from different county in
+         same state" is less than 10, then suppress (by replacing
+         the number with d) the number of under 65 exemptions
+         and the number of 65+ exemptions for "in-migrants from
+         different county in same state".
+
+
+D.  Final Complimentary Suppression:
+
+If the total number of returns is not suppressed, then check for
+complimentary suppressions:
+
+    (A). If there is one and only one county within a state where
+         a data variable has been suppressed, or if the sum of
+         the values in the data cell for all suppressed counties
+         is less than 10, then another county will be chosen for
+         complimentary suppression.  Also, if the total number at
+         the state level (rolled-up from the counties) equals the
+         original state total and there is atleast one county
+         with a suppression, then another county will be chosen
+         for complimentary suppression.  Note that the counties
+         chosen for complimentary suppression are the same as
+         the counties chosen for complimentary suppression in the
+         county-to-county migration flows data product.
+
+    (B). All data variables are checked for complimentary
+         suppression.  Only those variables involved in the
+         suppression process are changed.
+
+    (C). For a few data cells, the difference between the final
+         (after suppression) value and the pre-suppression
+         raw tabulated value, added to the state level, may
+         be less that 10.  This occurs when a value is added
+         into the cell from another cell for county A, and
+         the value of the cell is added into another cell
+         for county B.  The total amount of changes is greater
+         than 10, even though the net difference in the
+         data cell is less than 10.
+
+
+
+
+
+
+       Part H.2 -- Suppression Procedures for the
+      		County Income External Tally
+
+
+A. Suppression Process for States:
+
+If the total number of returns is less than 3, then all data for
+the state will be suppressed.  Otherwise, the aggregate income
+amount for will be suppressed if the number or returns with income
+is less that 3 returns.  This check is done separately for 3 income
+types (wage and salary, dividend, and interest).  Data is suppressed 
+by adding it into the corresponding data cells for another state.  
+Note that this should never occur.
+
+
+B. Suppression Process for Counties:
+
+If the total number of returns is less than 10, then all data for
+the county will be suppressed.  Otherwise, the aggregate income
+amount for will be suppressed if the number or returns with income
+is less that 10 returns.  This check is done separately for 4
+income types (wage and salary, dividend, and interest).  Data is 
+suppressed by adding it into the corresponding data cells for 
+another county.
+
+
+
+
+
+
+       Part H.3 -- Suppression Procedures for the
+         State-to-State Migration Flows
+
+
+A. Suppression Process for In-migrants:
+
+If the number of returns in the flow has less than 3 returns, then
+the flow is suppressed by replacing the value with "d".
+
+If the flow is between states in the U.S., then complimentary
+suppression is made to three other flows, where the value for the
+suppressed flow is replaced with "d". If (X1-to-X2) is the
+suppressed flow, then another flow (Y1-to-Y2) is chosen for
+complimentary suppression, where Y1 is in the same region as X1 and
+Y2 is in the same region as X2.  The other two flows requiring
+complimentary suppression are then (X1-to-Y2) and (X2-to-Y1).  This
+same suppression will be carried forward into the county-to-county
+flow suppression process.
+
+If the flow is between a foreign and a state in the U.S., then
+complimentary suppression is made to another foreign-state flow,
+where the value for the suppressed flow is replaced with
+"d".  If (FR-to-X2) is the suppressed flow, then another flow (FR-
+to-Y2) is chosen for complimentary suppression, where Y2 is in the
+same region as X2.  This same suppression will be carried forward
+into the county-to-county flow suppression process.
+
+
+B. Suppression Process for Out-migrants:
+
+If the number of returns in the flow has less than 3 returns, then
+the flow is suppressed by replacing the value with "d".
+
+If the flow is between states in the U.S., then complimentary
+suppression is made to three other flows, where the value for the
+suppressed flow is replaced with "d". If (X1-to-X2) is the
+suppressed flow, then another flow (Y1-to-Y2) is chosen for
+complimentary suppression, where Y1 is in the same region as X1 and
+Y2 is in the same region as X2.  The other two flows requiring
+complimentary suppression are then (X1-to-Y2) and (X2-to-Y1).
+This same suppression will be carried forward into the county-to-
+county flow suppression process.
+
+If the flow is between a state in the U.S. and foreign, then
+complimentary suppression is made to another state-foreign flow,
+where the value for the suppressed flow is replaced with
+"d".  If (X1-to-FR) is the suppressed flow, then another flow (Y1-
+to-FR) is chosen for complimentary suppression, where Y1 is in the
+same region as X1. This same suppression will be carried forward
+into the county-to-county flow suppression process.
+
+
+
+
+
+
+       Part H.4 -- Suppression Procedures for the
+           County-to-County Migration Flows
+
+
+A. Suppression Process for Out-migrants:
+
+If the total number of returns for the county is less that 10, then
+all data for the county will be suppressed by adding it into the
+data for another county.  These are the same counties as is done
+for the gross migration tables.
+
+If there is a state-to-state flow requiring suppression on the
+state-to-state migration flow table, then the suppression and
+complimentary suppressions required are done for all counties in
+the state in the county-to-county flow data.
+
+If there is a state-to-foreign flow requiring suppression on the
+state-to-state migration flow table, then the suppression and
+complimentary suppressions required are done for all counties in
+the state in the county-to-county flow data.
+
+If the total number of migrants for all flows is less than 10, the
+total number of migrants for all flows in the U.S. is less than 10,
+the total number of non-migrants is less than 10, or the number of
+year-2 onlys is less that 10 returns, then all data for the county
+will be suppressed.  For consistency with the migration total
+processing, the data will be replaced with "d".
+
+The migration summaries for all out-migrants from a county are
+checked next.
+
+If the number of out-migrants to foreign is less than 10, then it
+will be suppressed by adding it into the number of out-migrants to
+a different state.  All individual out-flows to foreign are also
+suppressed.
+
+If the number of out-migrants to a different state is less than 10,
+or the number of out-migrants to a different county in the same
+state is less than 10, then all out-migration data for the county
+is suppressed.
+
+If there is one and only one county in the state where the
+migration summary data is suppressed, then another county in the
+state is chosen for complimentary suppression.  All out-migration
+data for that county is then suppressed.  Note that these counties
+are the same as for the gross migration table.
+
+If the county flow totals are suppressed (above), then the
+individual out-flow data are also suppressed.  For the other
+counties where the county flow totals are shown, then individual
+county-to-county flow data may be shown, subject to the
+suppressions listed below.
+
+All individual county-to-county flows with less that 10 returns are
+suppressed by combining them into 6 subtotal categories: foreign,
+same state, different state-northeast region, different state-
+midwest region, different state-south region, and different state-
+west region.  If any of the 4 region subtotals have less that 10
+returns, then the 4 region subtotals are collapsed into one
+subtotal category   "different state".
+
+If the number of returns in the "foreign" subtotal is less than 10,
+then an individual out-migration flow to foreign with 10 or more
+returns is suppressed by adding it into the "foreign" subtotal.
+
+If the number of returns in the "same state" subtotal is less than
+10, then an individual out-migration flow to a county in the same
+state with 10 or more returns is suppressed by adding it into the
+"same state" subtotal.
+
+If the number of returns in the "different state" subtotal is less
+than 10, then an individual out-migration flow to a county in a
+different state with 10 or more returns is suppressed by adding it
+into the "different state" subtotal.
+
+
+B. Suppression Process for In-migrants:
+
+If the total number of returns for the county is less that 10, then
+all data for the county will be suppressed by adding it into the
+data for another county.  These are the same counties as is done
+for the gross migration tables.
+
+If there is a state-to-state flow requiring suppression on the
+state-to-state migration flow table, then the suppression and
+complimentary suppressions required are done for all counties in
+the state in the county-to-county flow data.
+
+If there is a foreign-to-state flow requiring suppression on the
+state-to-state migration flow table, then the suppression and
+complimentary suppressions required are done for all counties in
+the state in the county-to-county flow data.
+
+If the total number of migrants for all flows is less than 10, the
+total number of migrants for all flows in the U.S. is less than 10,
+the total number of non-migrants is less than 10, or the number of
+year-2 onlys is less that 10 returns, then all data for the county
+will be suppressed.  For consistency with the migration total
+processing, the data will be replaced with "d".
+
+The migration summaries for all in-migrants to a county are checked
+next.
+
+If the number of in-migrants from foreign is less than 10, then it
+will be suppressed by adding it into the number of in-migrants from
+a different state.  All individual in-flows from foreign are also
+suppressed.
+
+If the number of in-migrants from a different state is less than
+10, or the number of in-migrants from a different county in the
+same state is less than 10, then all in-migration data for the
+county is suppressed.
+
+If there is one and only one county in the state where the
+migration summary data is suppressed, then another county in the
+state is chosen for complimentary suppression.  All in-migration
+data for that county is then suppressed.  Note that these counties
+are the same as for the gross migration table.
+
+If the county flow totals are suppressed (above), then the
+individual in-flow data are also suppressed.  For the other
+counties where the county flow totals are shown, then individual
+county-to-county flow data may be shown, subject to the
+suppressions listed below.
+
+All individual county-to-county flows with less that 10 returns are
+suppressed by combining them into 6 subtotal categories: foreign,
+same state, different state-northeast region, different state-
+midwest region, different state-south region, and different state-
+west region.  If any of the 4 region subtotals have less that 10
+returns, then the 4 region subtotals are collapsed into one
+subtotal category   "different state".
+
+If the number of returns in the "foreign" subtotal is less than 10,
+then an individual in-migration flow from foreign with 10 or more
+returns is suppressed by adding it into the "foreign" subtotal.
+
+If the number of returns in the "same state" subtotal is less than
+10, then an individual in-migration flow to a county in the same
+state with 10 or more returns is suppressed by adding it into the
+"same state" subtotal.
+
+If the number of returns in the "different state" subtotal is less
+than 10, then an individual in-migration flow to a county in a
+different state with 10 or more returns is suppressed by adding it
+into the "different state" subtotal.
