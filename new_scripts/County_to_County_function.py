@@ -52,6 +52,7 @@ def irs_county():
     # Creates counties database and data fields
     db_name = os.path.join(input()) + '.sqlite'
     con = sqlite3.connect(db_name)
+    con.text_factory = str
     cur = con.cursor()
     print('Created SQLite database: ' + db_name)
     
@@ -71,18 +72,28 @@ def irs_county():
             for k, v in stcode.items():
                 if state_dest in k:
                     st_abbrv = str(v)
-            line.insert(1,st_abbrv)        
+            line.insert(1,st_abbrv)
             del line[2]
             del line[2]
             line.insert(2,dest)
             del line[3]
             del line[3]
             line.insert(3,orig)
-            if line[3].startswith('96'):
+            if line[2] == '01000':  
+                del line
+            elif line[3].startswith('96'):
                 newlist_totals.append(line)
             elif line[3].startswith('97'):
                 newlist_totals.append(line)
             elif line[3].startswith('98'):
+                newlist_totals.append(line)
+            elif line[3].startswith('59001'):
+                newlist_totals.append(line)
+            elif line[3].startswith('59003'):
+                newlist_totals.append(line)
+            elif line[3].startswith('59005'):
+                newlist_totals.append(line)
+            elif line[3].startswith('59007'):
                 newlist_totals.append(line)
             else:
                 newlist_in.append(line)
@@ -92,7 +103,7 @@ def irs_county():
 
         cur.execute("""
         CREATE TABLE %s (
-        uid TEXT NOT NULL PRIMARY KEY,
+        uid TEXT,
         st_dest_abbrv TEXT,
         destination TEXT,
         origin TEXT,
@@ -110,7 +121,7 @@ def irs_county():
 
         cur.execute(""" 
         CREATE TABLE %s (
-        uid TEXT NOT NULL PRIMARY KEY,
+        uid TEXT,
         st_dest_abbrv TEXT,
         destination TEXT,
         origin TEXT,
@@ -122,7 +133,6 @@ def irs_county():
         %header_in)         # Creates County inflow data table
 
         cur.executemany('INSERT INTO %s VALUES(%s)'%(header_in,newmark), newlist_in)
-        
         print(cur.rowcount,'Records were written to the County inflow table')
 
         con.commit()
@@ -149,11 +159,21 @@ def irs_county():
             del line[3]
             del line[3]
             line.insert(3,dest)
-            if line[3].startswith('96'):         #separate out Totals headers
+            if line[2] == '01000':
+                del line
+            elif line[3].startswith('96'):         #separate out Totals headers
                 newlist_totals_out.append(line)
             elif line[3].startswith('97'):
                 newlist_totals_out.append(line)
             elif line[3].startswith('98'):
+                newlist_totals_out.append(line)
+            elif line[3].startswith('59001'):
+                newlist_totals_out.append(line)
+            elif line[3].startswith('59003'):
+                newlist_totals_out.append(line)
+            elif line[3].startswith('59005'):
+                newlist_totals_out.append(line)
+            elif line[3].startswith('59007'):
                 newlist_totals_out.append(line)
             else:
                 newlist_out.append(line)
@@ -162,7 +182,7 @@ def irs_county():
 
         cur.execute("""
         CREATE TABLE %s (
-        uid TEXT NOT NULL PRIMARY KEY,
+        uid TEXT,
         st_orig_abbrv TEXT,
         origin TEXT,
         destination TEXT,
@@ -180,7 +200,7 @@ def irs_county():
 
         cur.execute("""
         CREATE TABLE %s (
-        uid TEXT NOT NULL PRIMARY KEY,
+        uid TEXT,
         st_orig_abbrv TEXT,
         origin TEXT,
         destination TEXT,
@@ -208,7 +228,7 @@ def irs_county():
                 cur.execute("UPDATE %s SET exemptions = NULL WHERE disclosure IN (-1,'d');" %tab)
                 cur.execute("UPDATE %s SET income = NULL WHERE disclosure IN (-1,'d');" %tab)
                 con.commit()
-                print("Added columns for " + tab[0])
+                print("Added disclosure columns for " + tab[0])
 
         con.close()
 
