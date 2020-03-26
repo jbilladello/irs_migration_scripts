@@ -2,7 +2,7 @@
 
 import sqlite3
 
-con = sqlite3.connect('')
+con = sqlite3.connect('') #Provide path to database
 cur = con.cursor()
 
 cur.execute("SELECT name FROM sqlite_master WHERE type='table';")
